@@ -7,6 +7,6 @@ class Engine:
         self.problem = problem
         self.algorithm = algorithm
 
-    def solve(self) -> Solution:
-        node_solution = self.algorithm.search(self.problem)
-        return node_solution.solution()
+    # def solve(self) -> Solution:
+    #     node_solution = self.algorithm.search(self.problem)
+    #     return node_solution.solution()

@@ -1,6 +1,5 @@
 from enum import Enum
-
-from practica_1.problems.abstractproblem import State, Actions, MyProblem
+from engine.problems.abstractproblem import State, Actions, MyProblem
 
 
 class MissionariesAndCannibalsProblem(MyProblem):

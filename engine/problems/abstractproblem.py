@@ -1,4 +1,4 @@
-from utils import is_in
+from engine.utils import is_in
 
 
 class MyProblem:
