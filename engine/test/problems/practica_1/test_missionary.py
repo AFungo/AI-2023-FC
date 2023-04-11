@@ -1,6 +1,6 @@
 import pytest
 from engine.problems.practica_1.missionary_and_cannibals_problem import *
-from engine.algorithms.uninformed.breadth_graph_search import *
+from engine.algorithms.uninformed.breadth_first_graph_search import *
 from engine.algorithms.uninformed.depth_first_graph_search import *
 
 
