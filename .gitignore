@@ -1,2 +1,4 @@
 /env/
 /.idea/
+/engine/test/problems/practica_1/.pytest_cache/
+/engine/.pytest_cache/
