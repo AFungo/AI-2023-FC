@@ -39,7 +39,7 @@ class MyProblem:
         if isinstance(self.goal, list):
             return is_in(state, self.goal)
         else:
-            return state.begin == self.goal.begin and state.end == self.goal.end and state.boat_side == self.goal.boat_side
+            return state == self.goal
 
     def path_cost(self, c, state1, action, state2):
         """Return the cost of a solution path that arrives at state2 from
