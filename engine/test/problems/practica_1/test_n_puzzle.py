@@ -7,8 +7,8 @@ from engine.problems.practica_1.n_puzzle import NPuzzle, NPuzzleState
 @pytest.fixture
 def params():
     params = {}
-    params['initial_state'] = NPuzzleState((1, 0, 4,
-                                            3, 5, 2,
+    params['initial_state'] = NPuzzleState((1, 2, 3,
+                                            0, 5, 4,
                                             7, 8, 6))
     params['n_puzzle_problem'] = NPuzzle(params['initial_state'], 3)
     return params
