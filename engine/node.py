@@ -21,6 +21,9 @@ class Node:
     def __repr__(self):
         return "<Node {}>".format(self.state)
 
+    def __lt__(self, node):
+        return self.state < node.state
+
     def expand(self, problem):
         """List the nodes reachable in one step from this node."""
         possible_actions = []
