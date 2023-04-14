@@ -32,13 +32,34 @@ class NPuzzle(MyProblem):
     def h(self, node):
         """ Return the heuristic value for a given state. Default heuristic function used is
         h(n) = number of misplaced tiles """
+        h = 0
+        board = node.state.board
+        for i in range(len(board)):
+            if board[i] != i + 1:
+                h += 1
+        return h
+        # return sum(s != g for (s, g) in zip(n, node.state))
 
-        return sum(s != g for (s, g) in zip(node.state, self.goal))
+
+def manhattan_heuristic(node):
+    distance = 0
+    size = node.state.size
+    board = node.state.board
+
+    for i in range(size):
+        for j in range(size):
+            tile = board[i * size + j]
+            if tile != 0:
+                gi, gj = tile - 1 // size, tile - 1 % size
+                distance += abs(i - gi) + abs(j - gj)
+    return distance
 
 
 class NPuzzleState(State):
-    def __init__(self, board):
+    def __init__(self, board, size):
         self.board = board
+        self.index = 0
+        self.size = size
 
     def is_goal(self):
         return is_tuple_ordered(self.board)
@@ -46,6 +67,12 @@ class NPuzzleState(State):
     def find_blank_square(self):
         """Return the index of the blank square in a given state"""
         return self.board.index(0)
+
+    def __iter__(self):
+        return self.board.__iter__()
+
+    def __lt__(self, other):
+        return self.board.__lt__(other.board)
 
 
 class NPuzzleMoveUp(Actions):
@@ -110,4 +137,4 @@ def n_puzzle_move(state, delta):
     neighbor = blank + delta
     new_board[blank], new_board[neighbor] = new_board[neighbor], new_board[blank]
 
-    return NPuzzleState(tuple(new_board))
+    return NPuzzleState(tuple(new_board), state.size)
