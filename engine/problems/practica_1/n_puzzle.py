@@ -50,7 +50,7 @@ def manhattan_heuristic(node):
         for j in range(size):
             tile = board[i * size + j]
             if tile != 0:
-                gi, gj = tile - 1 // size, tile - 1 % size
+                gi, gj = (tile - 1) // size, (tile - 1) % size
                 distance += abs(i - gi) + abs(j - gj)
     return distance
 
