@@ -5,10 +5,10 @@ class NQueensProblem(MyProblem):
 
     def __init__(self, n):
         initial_state = NQueensState(n, tuple([-1] * n))
-        actions_list = None
+        actions_list = []
         for i in range(n):
             for j in range(n):
-                actions_list = [Place_A_Queen_In_Board(i, j)]
+                actions_list.append(Place_A_Queen_In_Board(i, j))
         super().__init__(initial_state, actions_list)
 
     def goal_test(self, state):
@@ -23,8 +23,9 @@ class NQueensState(State):
         self.n = n
 
     def is_goal(self):
-        if self.board[-1] == -1:
-            return False
+        for i in range(self.n):
+            if self.board[i] == -1:
+                return False
         return not any(self.conflicted(self.board, self.board[col], col)
                        for col in range(len(self.board)))
 
@@ -74,5 +75,6 @@ class Place_A_Queen_In_Board(Actions):
         """In the leftmost empty column, try all non-conflicting rows."""
         if self.is_enable(state):
             new_board = list(state.board)
-            new_board[self.col] = self.r            return NQueensState(state.n, tuple(new_board))
+            new_board[self.col] = self.row
+            return NQueensState(state.n, tuple(new_board))
         return ()
