@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.0, pluggy-1.0.0
+rootdir: /home/agustin/Documents/Proyects/AI-2023-FC
+plugins: anyio-3.6.2, cov-4.0.0
+collected 4 items / 3 deselected / 1 selected
+
+engine/test/problems/practica_1/test_n_queens.py .                       [100%]
+
+======================= 1 passed, 3 deselected in 0.59s ========================
