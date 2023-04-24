@@ -6,4 +6,4 @@ collected 4 items / 3 deselected / 1 selected
 
 engine/test/problems/practica_1/test_n_queens.py .                       [100%]
 
-======================= 1 passed, 3 deselected in 0.59s ========================
+================= 1 passed, 3 deselected in 117.89s (0:01:57) ==================
