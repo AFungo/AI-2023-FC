@@ -1,7 +1,8 @@
 import pytest
 
 from engine.algorithms.uninformed.breadth_first_graph_search import breadth_first_graph_search
-from engine.algorithms.uninformed.depth_first_graph_search import *
+# from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
+# from engine.algorithms.uninformed.depth_first_graph_search import depth_first_graph_search
 from engine.problems.practica_1.n_queeens import NQueensState, NQueensProblem, Place_A_Queen_In_Board
 
 
@@ -18,28 +19,35 @@ def test_state_is_not_goal():
 
 
 def test_four_queen_breadth_first_graph_search():
-    eight_queen = NQueensProblem(4)
-    solution = breadth_first_graph_search(eight_queen)
+    four_queen = NQueensProblem(4)
+    solution = breadth_first_graph_search(four_queen)
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
-    assert eight_queen.goal_test(solution.state)
+    assert four_queen.goal_test(solution.state)
 
 
 def test_five_queen_breadth_first_graph_search():
-    eight_queen = NQueensProblem(5)
-    solution = breadth_first_graph_search(eight_queen)
+    five_queen = NQueensProblem(5)
+    solution = breadth_first_graph_search(five_queen)
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
-    assert eight_queen.goal_test(solution.state)
+    assert five_queen.goal_test(solution.state)
 
 
 def test_six_queen_breadth_first_graph_search():
-    eight_queen = NQueensProblem(6)
-    solution = breadth_first_graph_search(eight_queen)
+    six_queen = NQueensProblem(6)
+    solution = breadth_first_graph_search(six_queen)
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
-    assert eight_queen.goal_test(solution.state)
+    assert six_queen.goal_test(solution.state)
 
 
 def test_seven_queen_breadth_first_graph_search():
-    eight_queen = NQueensProblem(7)
+    seven_queen = NQueensProblem(7)
+    solution = breadth_first_graph_search(seven_queen)
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
+    assert seven_queen.goal_test(solution.state)
+
+
+def test_eight_queen_breadth_first_graph_search():
+    eight_queen = NQueensProblem(8)
     solution = breadth_first_graph_search(eight_queen)
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert eight_queen.goal_test(solution.state)
