@@ -36,15 +36,11 @@ class AlgorithmFactory:
     def __init__(self, algorithm, heuristic=None):
         self.algorithm = algorithm
         self.heuristic = heuristic
-        if heuristic is None:
-            self.algorithm_type = AlgorithmsType.UNINFORMED
-        else:
-            self.algorithm_type = AlgorithmsType.INFORMED
 
     def create(self):
-        if self.algorithm_type == AlgorithmsType.INFORMED:
+        if InformedAlgorithms.__contains__(self.algorithm):
             return self.create_informed_algorithm(self.algorithm, self.heuristic)
-        elif self.algorithm_type == AlgorithmsType.UNINFORMED:
+        elif UninformedAlgorithms.__contains__(self.algorithm):
             return self.create_uninformed_algorithm(self.algorithm)
         Exception("Algorithm type not supported")
 
