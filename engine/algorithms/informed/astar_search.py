@@ -1,0 +1,17 @@
+from engine.utils import *
+from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
+
+
+class AstarSearch:
+
+    def __init__(self, problem, h=None, display=False):
+        self.problem = problem
+        self.h = h
+        self.display = display
+
+    def search(self):
+        """A* search is best-first graph search with f(n) = g(n)+h(n).
+        You need to specify the h function when you call astar_search, or
+        else in your Problem subclass."""
+        h = memoize(self.h or self.problem.h, 'h')
+        return BestFirstGraphSearch(self.problem, lambda n: n.path_cost + h(n), self.h, self.display).search()

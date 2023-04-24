@@ -4,11 +4,13 @@ from engine.node import *
 
 
 class BestFirstGraphSearch:
-    def __init__(self, problem, heuristic):
+    def __init__(self, problem, heuristic, f, display=False):
         self.problem = problem
         self.heuristic = heuristic
+        self.f = f
+        self.display = display
 
-    def search(self, f, display=False):
+    def search(self):
         """Search the nodes with the lowest f scores first.
         You specify the function f(node) that you want to minimize; for example,
         if f is a heuristic estimate to the goal, then we have greedy best
@@ -16,7 +18,7 @@ class BestFirstGraphSearch:
         There is a subtlety: the line "f = memoize(f, 'f')" means that the f
         values will be cached on the nodes as they are computed. So after doing
         a best first search you can examine the f values of the path returned."""
-        f = memoize(f, 'f')
+        f = memoize(self.f, 'f')
         node = Node(self.problem.initial)
         frontier = PriorityQueue('min', f)
         frontier.append(node)
@@ -24,7 +26,7 @@ class BestFirstGraphSearch:
         while frontier:
             node = frontier.pop()
             if self.problem.goal_test(node.state):
-                if display:
+                if self.display:
                     print(len(explored), "paths have been expanded and", len(frontier), "paths remain in the frontier")
                 return node
             explored.add(node.state)
