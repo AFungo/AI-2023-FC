@@ -5,12 +5,15 @@ from engine.problems.problem import Problem
 
 
 class BreadthFirstSearch(SearchAlgorithm):
-    def search(self, problem: Problem) -> Node | None:
-        frontier = deque([Node(problem.initial_state())])  # FIFO queue
+
+    def __init__(self, problem):
+        self.problem = problem
+
+    def search(self):
+        frontier = deque([Node(self.problem.initial_state())])  # FIFO queue
         while frontier:
             node = frontier.popleft()
-            if problem.goal_test(node.state):
+            if self.problem.goal_test(node.state):
                 return node
-            frontier.extend(node.expand(problem))
+            frontier.extend(node.expand(self.problem))
         return None
-
