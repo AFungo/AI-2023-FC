@@ -4,10 +4,9 @@ from engine.node import *
 
 
 class BestFirstGraphSearch:
-    def __init__(self, problem, heuristic, f, display=False):
+    def __init__(self, problem, heuristic, display=False):
         self.problem = problem
         self.heuristic = heuristic
-        self.f = f
         self.display = display
 
     def search(self):
@@ -18,9 +17,9 @@ class BestFirstGraphSearch:
         There is a subtlety: the line "f = memoize(f, 'f')" means that the f
         values will be cached on the nodes as they are computed. So after doing
         a best first search you can examine the f values of the path returned."""
-        f = memoize(self.f, 'f')
+        self.heuristic = memoize(self.heuristic, 'f')
         node = Node(self.problem.initial)
-        frontier = PriorityQueue('min', f)
+        frontier = PriorityQueue('min', self.heuristic)
         frontier.append(node)
         explored = set()
         while frontier:
@@ -34,7 +33,7 @@ class BestFirstGraphSearch:
                 if child.state not in explored and child not in frontier:
                     frontier.append(child)
                 elif child in frontier:
-                    if f(child) < frontier[child]:
+                    if self.heuristic(child) < frontier[child]:
                         del frontier[child]
                         frontier.append(child)
         return None
