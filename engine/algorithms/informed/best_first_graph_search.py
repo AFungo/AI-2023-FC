@@ -4,10 +4,9 @@ from engine.node import *
 
 
 class BestFirstGraphSearch:
-    def __init__(self, problem, heuristic, display=False):
+    def __init__(self, problem, heuristic):
         self.problem = problem
         self.heuristic = heuristic
-        self.display = display
 
     def search(self):
         """Search the nodes with the lowest f scores first.
@@ -25,8 +24,6 @@ class BestFirstGraphSearch:
         while frontier:
             node = frontier.pop()
             if self.problem.goal_test(node.state):
-                if self.display:
-                    print(len(explored), "paths have been expanded and", len(frontier), "paths remain in the frontier")
                 return node
             explored.add(node.state)
             for child in node.expand(self.problem):
