@@ -1,5 +1,7 @@
 from enum import Enum, auto
 
+from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
+from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
 from engine.problems.practica_1.missionary_and_cannibals_problem import MissionariesAndCannibalsProblem
 from engine.problems.practica_1.n_puzzle import NPuzzle
 from engine.problems.practica_1.n_queeens import NQueensProblem
