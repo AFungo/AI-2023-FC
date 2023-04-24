@@ -17,13 +17,29 @@ def test_state_is_not_goal():
     assert not eight_queen.goal_test(state)
 
 
-def test_eight_queen_breadth_first_graph_search():
+def test_four_queen_breadth_first_graph_search():
     eight_queen = NQueensProblem(4)
     solution = breadth_first_graph_search(eight_queen)
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert eight_queen.goal_test(solution.state)
 
 
-def test_eight():
-    eight_queen = NQueensProblem(4)
-    solution = depth_first_graph_search(eight_queen).solution()
+def test_five_queen_breadth_first_graph_search():
+    eight_queen = NQueensProblem(5)
+    solution = breadth_first_graph_search(eight_queen)
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
+    assert eight_queen.goal_test(solution.state)
+
+
+def test_six_queen_breadth_first_graph_search():
+    eight_queen = NQueensProblem(6)
+    solution = breadth_first_graph_search(eight_queen)
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
+    assert eight_queen.goal_test(solution.state)
+
+
+def test_seven_queen_breadth_first_graph_search():
+    eight_queen = NQueensProblem(7)
+    solution = breadth_first_graph_search(eight_queen)
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert eight_queen.goal_test(solution.state)

@@ -6,9 +6,9 @@ class NQueensProblem(MyProblem):
     def __init__(self, n):
         initial_state = NQueensState(n, tuple([-1] * n))
         actions_list = []
-        for i in range(n):
-            for j in range(n):
-                actions_list.append(Place_A_Queen_In_Board(i, j))
+        for col in range(n):
+            for row in range(n):
+                actions_list.append(Place_A_Queen_In_Board(col, row))
         super().__init__(initial_state, actions_list)
 
     def goal_test(self, state):
@@ -45,18 +45,20 @@ class NQueensState(State):
 
 class Place_A_Queen_In_Board(Actions):
 
-    def __init__(self, row, col):
-        self.row = row
+    def __init__(self, col, row):
         self.col = col
+        self.row = row
 
     def is_enable(self, state):
-        return not self.conflicted(state, self.row, self.col)
+        return not self.conflicted(state, self.row, self.col) and self.check_order(state)
 
-        # col = state.board.index(-1)
-        # for row in range(state.n):
-        #     if not self.conflicted(state, row, col):
-        #         return True
-        # return False
+    def check_order(self, state):
+        if self.col > 0:
+            return state.board[self.col - 1] != -1
+        elif self.col == 0:
+            return state.board[self.col] == -1
+        else:
+            Exception("Invalid index")
 
     def conflicted(self, state, row, col):
         """Would placing a queen at (row, col) conflict with anything?"""
@@ -72,7 +74,6 @@ class Place_A_Queen_In_Board(Actions):
                 row1 + col1 == row2 + col2)  # same / diagonal
 
     def execute(self, state):
-        """In the leftmost empty column, try all non-conflicting rows."""
         if self.is_enable(state):
             new_board = list(state.board)
             new_board[self.col] = self.row
