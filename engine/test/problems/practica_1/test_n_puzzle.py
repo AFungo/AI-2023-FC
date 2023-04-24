@@ -2,8 +2,8 @@ import os
 
 import pytest
 
-from engine.algorithms.informed.astar_searh import astar_search
-from engine.algorithms.uninformed.breadth_first_graph_search import breadth_first_graph_search
+from engine.algorithms.informed.astar_search import AstarSearch
+from engine.algorithms.uninformed.breadth_first_graph_search import *
 from engine.problems.practica_1.n_puzzle import NPuzzle, NPuzzleState, manhattan_heuristic
 
 
@@ -33,34 +33,39 @@ def params():
 
 
 def test_n_puzzle_breadth_first_graph_search(params):
-    solution = breadth_first_graph_search(params['n_puzzle_problem']).solution()
+    algorithm = BreadthFirstGraphSearch(params['n_puzzle_problem'])
+    solution = algorithm.search().solution()
     expected = []
     assert expected == solution
 
 
 def test_3_puzzle_astar_search_default_heuristic_winner_state(params):
-    solution = astar_search(params['n_puzzle_problem']).solution()
+    algorithm = AstarSearch(params['n_puzzle_problem'])
+    solution = algorithm.search().solution()
     expected = []
     assert expected == solution
 
 
 def test_3_puzzle_astar_search_default_heuristic_medium_state(params):
-    params['n_puzzle_problem'] = NPuzzle(params['medium_initial_state'], 3)
-    solution = astar_search(params['n_puzzle_problem']).solution()
+    problem = NPuzzle(params['medium_initial_state'], 3)
+    algorithm = AstarSearch(problem)
+    solution = algorithm.search().solution()
     expected = []
     assert expected == solution
 
 
 def test_3_puzzle_astar_search_default_heuristic_advanced_state(params):
-    params['n_puzzle_problem'] = NPuzzle(params['advanced_initial_state'], 3)
-    solution = astar_search(params['n_puzzle_problem']).solution()
+    problem = NPuzzle(params['advanced_initial_state'], 3)
+    algorithm = AstarSearch(problem)
+    solution = algorithm.search().solution()
     expected = []
     assert expected == solution
 
 
 def test_3_puzzle_astar_search_manhattan_heuristic_medium_initial_state(params):
-    params['n_puzzle_problem'] = NPuzzle(params['medium_initial_state'], 3)
-    solution = astar_search(params['n_puzzle_problem'], manhattan_heuristic).solution()
+    problem = NPuzzle(params['medium_initial_state'], 3)
+    algorithm = AstarSearch(problem, manhattan_heuristic)
+    solution = algorithm.search().solution()
     expected = []
     assert expected == solution
 
@@ -70,8 +75,9 @@ import datetime
 
 def test_3_puzzle_astar_search_manhattan_heuristic_advanced_initial_state(params):
     params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    params['n_puzzle_problem'] = NPuzzle(params['advanced_initial_state'], 3)
-    solution = astar_search(params['n_puzzle_problem'], manhattan_heuristic).solution()
+    problem = NPuzzle(params['advanced_initial_state'], 3)
+    algorithm = AstarSearch(problem, manhattan_heuristic)
+    solution = algorithm.search().solution()
     expected = []
     params['f'].write(datetime.datetime.now().__str__() + "\n")
     assert expected == solution
@@ -79,8 +85,9 @@ def test_3_puzzle_astar_search_manhattan_heuristic_advanced_initial_state(params
 
 def test_5_puzzle_astar_search_manhattan_heuristic(params):
     params['f'].write("5 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    params['n_puzzle_problem'] = NPuzzle(params['5_puzzle_initial_state'], 5)
-    solution = astar_search(params['n_puzzle_problem'], manhattan_heuristic).solution()
+    problem = NPuzzle(params['5_puzzle_initial_state'], 3)
+    algorithm = AstarSearch(problem, manhattan_heuristic)
+    solution = algorithm.search().solution()
     expected = []
     params['f'].write(datetime.datetime.now().__str__() + "\n")
     assert expected == solution

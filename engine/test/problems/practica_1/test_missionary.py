@@ -106,14 +106,16 @@ def test_actions_list_initial_state(params):
 
 
 def test_breadth_first_graph_search_missionaries_and_cannibals(params):
-    solution = breadth_first_graph_search(params['cannibals_and_missionary_problem']).solution()
+    algorithm = BreadthFirstGraphSearch(params['cannibals_and_missionary_problem'])
+    solution = algorithm.search().solution()
     solution = list(map(lambda a: a.__str__(), solution))
     expected = ['MTC', 'MC', 'MTC', 'MC', 'MTM', 'MCM', 'MTM', 'MC', 'MTC', 'MM', 'MCM']
     assert solution == expected
 
 
 def test_depth_first_graph_search_missionaries_and_cannibals(params):
-    solution = depth_first_graph_search(params['cannibals_and_missionary_problem']).solution()
+    algorithm = DepthFirstGraphSearch(params['cannibals_and_missionary_problem'])
+    solution = algorithm.search().solution()
     solution = list(map(lambda a: a.__str__(), solution))
     expected = ['MTC', 'MC', 'MTC', 'MC', 'MTM', 'MCM', 'MTM', 'MC', 'MTC', 'MM', 'MCM']
     # assert solution == expected
