@@ -4,12 +4,16 @@ from engine.node import Node
 
 
 class DepthFirstSearch(SearchAlgorithm):
-    def search(self, problem: Problem) -> Node | None:
-        frontier = [Node(problem.initial_state())]
+
+    def __init__(self, problem):
+        self.problem = problem
+
+    def search(self):
+        frontier = [Node(self.problem.initial_state())]
         while frontier:
             node = frontier.pop()
-            if problem.goal_test(node.state):
+            if self.problem.goal_test(node.state):
                 return node
-            frontier.extend(node.expand(problem))
+            frontier.extend(node.expand(self.problem))
         return None
 

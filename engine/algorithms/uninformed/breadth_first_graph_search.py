@@ -1,8 +1,9 @@
+from engine.algorithms.search_algorithm import SearchAlgorithm
 from engine.node import Node
 from collections import deque
 
 
-class BreadthFirstGraphSearch:
+class BreadthFirstGraphSearch(SearchAlgorithm):
     def __init__(self, problem):
         self.problem = problem
 
