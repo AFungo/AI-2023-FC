@@ -15,12 +15,14 @@ from engine.algorithms.search_algorithm import SearchAlgorithm
 
 
 class Engine:
-    def __init__(self, problem, algorithm, initial_state, goal_state=None):
+    def __init__(self, problem, algorithm, initial_state, goal_state=None, params=None):
+        if params is None:
+            params = {}
         self.problem = ProblemFactory.create(problem, initial_state, goal_state)
         self.algorithm = AlgorithmFactory.create(algorithm)
 
     def solve(self):
-        node_solution = self.algorithm.search(self.problem)
+        node_solution = self.algorithm.search()
         return node_solution.solution()
 
 
@@ -56,6 +58,7 @@ class AlgorithmFactory:
             return AstarSearch(self.problem, self.heuristic)
         elif self.algorithm == InformedAlgorithms.BEST_FIRST_GRAPH_SEARCH:
             return BestFirstGraphSearch(self.problem, self.heuristic)
+        Exception("Algorithm type not supported")
 
     def create_uninformed_algorithm(self):
         if self.algorithm == UninformedAlgorithms.BREADTH_FIRST_SEARCH:
@@ -66,6 +69,11 @@ class AlgorithmFactory:
             return BreadthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_GRAPH_SEARCH:
             return DepthFirstGraphSearch(self.problem)
+        elif self.algorithm == UninformedAlgorithms.DEPTH_LIMITED_SEARCH:
+            if('depth_limit' not in params):
+                Exception("Depth limit not specified")
+            return DepthLimitedSearch(self.problem, params['depth_limit'])
+        Exception("Algorithm type not supported")
 
 
 class Problems(Enum):
@@ -90,3 +98,4 @@ class UninformedAlgorithms(Enum):
     DEPTH_FIRST_SEARCH = auto()
     BREADTH_FIRST_GRAPH_SEARCH = auto()
     BREADTH_FIRST_SEARCH = auto()
+    DEPTH_LIMITED_SEARCH = auto()
