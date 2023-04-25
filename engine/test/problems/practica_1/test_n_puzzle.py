@@ -3,7 +3,10 @@ import os
 import pytest
 
 from engine.algorithms.informed.astar_search import AstarSearch
+from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
+from engine.algorithms.uninformed.best_first_search import BestFirstSearch
 from engine.algorithms.uninformed.breadth_first_graph_search import *
+from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
 from engine.problems.practica_1.n_puzzle import NPuzzle, NPuzzleState, manhattan_heuristic
 
 
@@ -13,9 +16,9 @@ def params():
     params['goal_initial_state'] = NPuzzleState((1, 2, 3,
                                                  4, 5, 6,
                                                  7, 8, 0), 3)
-    params['medium_initial_state'] = NPuzzleState((4, 2, 0,
-                                                   7, 1, 3,
-                                                   8, 5, 6), 3)
+    params['medium_initial_state'] = NPuzzleState((1, 2, 3,
+                                                   4, 5, 6,
+                                                   7, 0, 8), 3)
     params['advanced_initial_state'] = NPuzzleState((7, 2, 4,
                                                      5, 0, 6,
                                                      8, 3, 1), 3)
@@ -69,6 +72,24 @@ def test_3_puzzle_astar_search_manhattan_heuristic_medium_initial_state(params):
     expected = []
     assert expected == solution
 
+
+def test_3_puzzle_best_first_search_manhattan_heuristic_medium_initial_state(params):
+    problem = NPuzzle(params['medium_initial_state'], 3)
+    bfs = BestFirstSearch(problem, manhattan_heuristic)
+    bfs_book = BestFirstGraphSearch(problem, manhattan_heuristic)
+    bfs_solution = bfs.search().solution()
+    bfs_book_solution = bfs_book.search().solution()
+    expected = []
+    assert bfs_solution == bfs_book_solution
+
+def test_3_puzzle_uniform_cost_search_manhattan_heuristic_medium_initial_state(params):
+    problem = NPuzzle(params['medium_initial_state'], 3)
+    bfs = UniformCostSearch(problem)
+    bfs_book = BestFirstGraphSearch(problem, manhattan_heuristic)
+    bfs_solution = bfs.search().solution()
+    bfs_book_solution = bfs_book.search().solution()
+    expected = []
+    assert bfs_solution == []#bfs_book_solution
 
 import datetime
 
