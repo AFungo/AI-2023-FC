@@ -22,12 +22,7 @@ class MyProblem:
         state. The result would typically be a list, but if there are
         many actions, consider yielding them one at a time in an
         iterator, rather than building them all at once."""
-        acciones_activas = []
-        for accion in self.actions_list:
-            if accion.is_enable(state):
-                acciones_activas.append(accion)
-        return acciones_activas
-        # return list(filter(lambda a: a.is_enable(state), self.actions_list))
+        return list(filter(lambda a: a.is_enable(state), self.actions_list))
 
     def result(self, state, action):
         """Return the state that results from executing the given

@@ -1,6 +1,8 @@
 import pytest
 
 from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirstGraphSearch
+from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
+from engine.algorithms.uninformed.depth_first_search_no_cycles import DepthFirstSearchNoCycles
 from engine.problems.practica_1.n_queeens import NQueensState, NQueensProblem, Place_A_Queen_In_Board
 
 
@@ -49,3 +51,9 @@ def test_eight_queen_breadth_first_graph_search():
     solution = BreadthFirstGraphSearch(eight_queen).search()
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert eight_queen.goal_test(solution.state)
+
+def test_four_queen_depth_first_search():
+    four_queen = NQueensProblem(4)
+    solution = DepthFirstSearchNoCycles(four_queen).search()
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
+    assert four_queen.goal_test(solution.state)
