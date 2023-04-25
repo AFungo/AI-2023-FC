@@ -8,11 +8,6 @@ class BreadthFirstGraphSearch(SearchAlgorithm):
         self.problem = problem
 
     def search(self):
-        """[Figure 3.11]
-        Note that this function can be implemented in a
-        single line as below:
-        return graph_search(problem, FIFOQueue())
-        """
         node = Node(self.problem.initial)
         if self.problem.goal_test(node.state):
             return node
