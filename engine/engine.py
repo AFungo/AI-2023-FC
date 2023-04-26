@@ -6,6 +6,7 @@ from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirst
 from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
 from engine.algorithms.uninformed.depth_first_graph_search import DepthFirstGraphSearch
 from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
+from engine.algorithms.uninformed.depth_limited_search import DepthLimitedSearch
 from engine.problems.practica_1.missionary_and_cannibals_problem import MissionariesAndCannibalsProblem
 from engine.problems.practica_1.n_puzzle import NPuzzle
 from engine.problems.practica_1.n_queeens import NQueensProblem
@@ -15,11 +16,13 @@ from engine.algorithms.search_algorithm import SearchAlgorithm
 
 
 class Engine:
-    def __init__(self, problem, algorithm, initial_state, goal_state=None, params=None):
-        if params is None:
-            params = {}
+    def __init__(self, problem, algorithm, initial_state, goal_state=None, heuristic=None, algorithm_params=None):
         self.problem = ProblemFactory.create(problem, initial_state, goal_state)
-        self.algorithm = AlgorithmFactory.create(algorithm)
+        algorithm_factory = AlgorithmFactory(algorithm, problem, heuristic=heuristic, params=algorithm_params)
+        self.algorithm = algorithm_factory.create()
+        self.initial_state = initial_state
+        self.goal_state = goal_state
+        self.heuristic = heuristic
 
     def solve(self):
         node_solution = self.algorithm.search()
@@ -27,6 +30,7 @@ class Engine:
 
 
 class ProblemFactory:
+
     def create(self, problem, initial_state, goal_state=None):
 
         if problem == Problems.ROMANIA_MAP:
@@ -41,7 +45,11 @@ class ProblemFactory:
 
 class AlgorithmFactory:
 
-    def __init__(self, algorithm, problem, heuristic=None):
+    def __init__(self, algorithm, problem, heuristic=None, params=None):
+        if params is None:
+            self.params = {}
+        else:
+            self.params = params
         self.algorithm = algorithm
         self.problem = problem
         self.heuristic = heuristic
@@ -70,9 +78,9 @@ class AlgorithmFactory:
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_GRAPH_SEARCH:
             return DepthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_LIMITED_SEARCH:
-            if('depth_limit' not in params):
+            if('depth_limit' not in self.params):
                 Exception("Depth limit not specified")
-            return DepthLimitedSearch(self.problem, params['depth_limit'])
+            return DepthLimitedSearch(self.problem, self.params['depth_limit'])
         Exception("Algorithm type not supported")
 
 
