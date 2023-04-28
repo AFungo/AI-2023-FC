@@ -15,12 +15,53 @@ class NQueensProblem(MyProblem):
         """ Given a state, return True if state is a goal state or False, otherwise """
         return state.is_goal()
 
+    def h(self, node):
+        """ Return the heuristic value for a given state. Default heuristic function used is
+        h(n) = number of misplaced tiles """
+        h = 0
+        board = node.state.board
+        for i in range(len(board)):
+            if board[i] != i + 1:
+                h += 1
+        return h
+        # return sum(s != g for (s, g) in zip(n, node.state))
+
+
+def unattacked_squares(node):
+    not_attack = 0
+    try:
+        current_col = node.state.board.index(-1)
+        for col in range(current_col, node.state.n):
+            for row in range(node.state.n):
+                if not conflicted(node.state.board, row, col):
+                    not_attack += 1
+    except ValueError:
+        return not_attack
+    return not_attack
+
+
+def conflicted(board, row, col):
+    """Would placing a queen at (row, col) conflict with anything?"""
+    return any(conflict(row, col, board[c], c)
+               for c in range(col))
+
+
+def conflict(row1, col1, row2, col2):
+    """Would putting two queens in (row1, col1) and (row2, col2) conflict?"""
+    return (row1 == row2 or  # same row
+            col1 == col2 or  # same column
+            row1 - col1 == row2 - col2 or  # same \ diagonal
+            row1 + col1 == row2 + col2)  # same / diagonal
+
 
 class NQueensState(State):
 
     def __init__(self, n, board):
         self.board = board
         self.n = n
+
+    def __lt__(self, other):
+        return self.board.__lt__(other.board)
 
     def is_goal(self):
         for i in range(self.n):
