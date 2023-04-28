@@ -7,8 +7,9 @@ class RomaniaMap(MyProblem):
 
     def __init__(self, initial, goal):
         actions_list = []
-        for city in romania_map.locations.keys():
-            actions_list.append(RomaniaMapAction(city))
+        for departure_city in romania_map.locations.keys():
+            for arrival_city in romania_map.get(departure_city).keys():
+                actions_list.append(RomaniaMapAction(departure_city, arrival_city))
         super().__init__(initial, action_list=actions_list, goal=goal)
 
     def path_cost(self, cost_so_far, A, action, B):
@@ -35,6 +36,16 @@ class RomaniaMap(MyProblem):
             return np.inf
 
 
+class RomaniaMapInverted(RomaniaMap):
+    def __init__(self, initial):
+        super().__init__(initial, goal=None)
+        actions_list = []
+        for departure_city in romania_map.locations.keys():
+            for arrival_city in romania_map.get(departure_city).keys():
+                actions_list.append(RomaniaMapActionInverted(departure_city, arrival_city))
+        self.actions_list = actions_list
+
+
 class RomaniaMapState(State):
     def __init__(self, city):
         self.city = city
@@ -45,19 +56,41 @@ class RomaniaMapState(State):
     def __hash__(self):
         return hash(self.city)
 
+    def __lt__(self, other):
+        return self
+
+    def __str__(self):
+        return self.city
+
 
 class RomaniaMapAction(Actions):
-    def __init__(self, arrival_city):
+    def __init__(self, departure_city, arrival_city):
+        self.departure_city = departure_city
         self.arrival_city = arrival_city
 
     def is_enable(self, state):
-        return romania_map.get(state.city).keys().__contains__(self.arrival_city)
+        return romania_map.get(state.city).keys().__contains__(self.arrival_city) and state.city == self.departure_city
 
     def execute(self, state):
         return RomaniaMapState(self.arrival_city)
 
     def __str__(self):
-        return self.arrival_city
+        return "(" + self.departure_city + ", " + self.arrival_city + ")"
+
+
+class RomaniaMapActionInverted:
+    def __init__(self, departure_city, arrival_city):
+        self.departure_city = departure_city
+        self.arrival_city = arrival_city
+
+    def is_enable(self, state):
+        return romania_map.get(state.city).keys().__contains__(self.departure_city) and state.city == self.arrival_city
+
+    def execute(self, state):
+        return RomaniaMapState(self.departure_city)
+
+    def __str__(self):
+        return "(" + self.departure_city + ", " + self.arrival_city + ")"
 
 
 romania_map = UndirectedGraph(dict(
