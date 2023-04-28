@@ -78,7 +78,7 @@ class AlgorithmFactory:
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_GRAPH_SEARCH:
             return DepthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_LIMITED_SEARCH:
-            if('depth_limit' not in self.params):
+            if 'depth_limit' not in self.params:
                 Exception("Depth limit not specified")
             return DepthLimitedSearch(self.problem, self.params['depth_limit'])
         Exception("Algorithm type not supported")
