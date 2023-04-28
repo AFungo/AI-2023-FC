@@ -35,6 +35,11 @@ class RomaniaMap(MyProblem):
             return np.inf
 
 
+class RomaniaMapHeuristics:
+    def straigth_line_distance(self, node):
+        pass
+
+
 class RomaniaMapState(State):
     def __init__(self, city):
         self.city = city

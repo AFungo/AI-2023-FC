@@ -40,19 +40,26 @@ class NPuzzle(MyProblem):
         return h
         # return sum(s != g for (s, g) in zip(n, node.state))
 
+class NPuzzleHeuristics:
 
-def manhattan_heuristic(node):
-    distance = 0
-    size = node.state.size
-    board = node.state.board
+    def manhattan_heuristic(self, node):
+        distance = 0
+        size = node.state.size
+        board = node.state.board
 
-    for i in range(size):
-        for j in range(size):
-            tile = board[i * size + j]
-            if tile != 0:
-                gi, gj = (tile - 1) // size, (tile - 1) % size
-                distance += abs(i - gi) + abs(j - gj)
-    return distance
+        for i in range(size):
+            for j in range(size):
+                tile = board[i * size + j]
+                if tile != 0:
+                    gi, gj = (tile - 1) // size, (tile - 1) % size
+                    distance += abs(i - gi) + abs(j - gj)
+        return distance
+
+    def misplaced_numbers(self, node):
+        pass
+
+    def gaschnig(self, node):
+        pass
 
 
 class NPuzzleState(State):
