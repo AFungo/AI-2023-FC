@@ -4,10 +4,10 @@ from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSea
 
 class AstarSearch:
 
-    def __init__(self, problem, h=None):
+    def __init__(self, problem, heuristic=None):
         self.problem = problem
-        self.h = h
+        self.heuristic = heuristic
 
     def search(self):
-        self.h = memoize(self.h or self.problem.h, 'h')
-        return BestFirstGraphSearch(self.problem, lambda n: n.path_cost + self.h(n)).search()
+        self.heuristic = memoize(self.heuristic or self.problem.heuristic, 'h')
+        return BestFirstGraphSearch(self.problem, lambda n: n.path_cost + self.heuristic(n)).search()

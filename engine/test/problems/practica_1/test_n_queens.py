@@ -1,9 +1,12 @@
 import pytest
 from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirstGraphSearch
-from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
 from engine.algorithms.uninformed.depth_first_search_no_cycles import DepthFirstSearchNoCycles
 from engine.problems.practica_1.n_queeens import NQueensState, NQueensProblem, unattacked_squares
 from engine.algorithms.informed.astar_search import AstarSearch
+
+'''
+    Tests check state is or not goal
+'''
 
 
 def test_state_is_goal():
@@ -16,6 +19,9 @@ def test_state_is_not_goal():
     eight_queen = NQueensProblem(8)
     state = NQueensState(8, (1, 2, 3, 2, 5, 1, 6, 4))
     assert not eight_queen.goal_test(state)
+
+
+''' Tests used breadth first graph search '''
 
 
 def test_four_queen_breadth_first_graph_search():
@@ -58,6 +64,9 @@ def test_four_queen_depth_first_search():
     solution = DepthFirstSearchNoCycles(four_queen).search()
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert four_queen.goal_test(solution.state)
+
+
+""" Tests used A* search with heuristic unattached squares"""
 
 
 def test_four_queen_astar_search_with_heuristic():
