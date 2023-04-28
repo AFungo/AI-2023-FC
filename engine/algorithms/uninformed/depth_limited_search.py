@@ -5,9 +5,9 @@ from engine.node import Node
 
 class DepthLimitedSearch(SearchAlgorithm):
 
-    def __init__(self, problem, l):
+    def __init__(self, problem, depth):
         self.problem = problem
-        self.l = l
+        self.depth = depth
 
     def search(self):
         frontier = [Node(self.problem.initial_state())]
@@ -16,7 +16,7 @@ class DepthLimitedSearch(SearchAlgorithm):
             if self.problem.goal_test(node.state):
                 return node
             path_states = list(map(lambda l: l.state, node.path()))
-            if node.depth > self.l:
+            if node.depth > self.depth:
                 return None
             elif path_states.count(node.state) < 2:
                 frontier.extend(node.expand(self.problem))
