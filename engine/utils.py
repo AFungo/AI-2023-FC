@@ -14,6 +14,7 @@ from statistics import mean
 import numpy as np
 
 
+
 # ______________________________________________________________________________
 # Functions on Sequences and Iterables
 
@@ -849,3 +850,24 @@ class Graph:
 def UndirectedGraph(graph_dict=None):
     """Build a Graph where every edge (including future ones) goes both ways."""
     return Graph(graph_dict=graph_dict, directed=False)
+
+
+from engine.node import Node
+
+
+def join_nodes(direction, node_parent, node_child):
+    if direction:
+        child = node_child.parent
+        action = node_child.action
+        solution = node_parent
+    else:
+        child = node_parent.parent
+        action = node_parent.action
+        solution = node_child
+
+    while child is not None:
+        print("\n\n\nState = " + solution.state.__str__() + " ---- Action: " + solution.action.__str__() + "\n\n\n")
+        solution = Node(child.state, solution, action)
+        action = child.action
+        child = child.parent
+    return solution
