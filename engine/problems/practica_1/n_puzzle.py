@@ -40,6 +40,7 @@ class NPuzzle(MyProblem):
         return h
         # return sum(s != g for (s, g) in zip(n, node.state))
 
+
 class NPuzzleHeuristics:
 
     def manhattan_heuristic(self, node):
