@@ -63,11 +63,13 @@ class HeuristicFactory:
 
         if self.problem == Problems.N_PUZZLE:
             if self.heuristic == Heuristic.MANHATTAN:
-                return NPuzzleHeuristics().manhattan_heuristic
+                return NPuzzleHeuristics().manhattan
             elif self.heuristic == Heuristic.MISPLACED_NUMBERS:
                 return NPuzzleHeuristics().misplaced_numbers
             elif self.heuristic == Heuristic.GASCHNIG:
                 return NPuzzleHeuristics().gaschnig
+            elif self.heuristic == Heuristic.LINERAR_CONFLICT:
+                return NPuzzleHeuristics().linear_conflict
         elif self.problem == Problems.N_QUEENS:
             if self.heuristic == Heuristic.UNATTACHED_SQUARES:
                 return NQueensHeuristics.unattacked_squares
@@ -130,6 +132,7 @@ class Heuristic(Enum):
     MANHATTAN = auto()
     MISPLACED_NUMBERS = auto()
     GASCHNIG = auto()
+    LINERAR_CONFLICT = auto()
     STRAIGTH_LINE_DISTANCE = auto()
 
 
