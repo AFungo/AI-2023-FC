@@ -29,39 +29,6 @@ class NPuzzle(MyProblem):
 
         return inversion % 2 == 0
 
-    def h(self, node):
-        """ Return the heuristic value for a given state. Default heuristic function used is
-        h(n) = number of misplaced tiles """
-        h = 0
-        board = node.state.board
-        for i in range(len(board)):
-            if board[i] != i + 1:
-                h += 1
-        return h
-        # return sum(s != g for (s, g) in zip(n, node.state))
-
-
-class NPuzzleHeuristics:
-
-    def manhattan_heuristic(self, node):
-        distance = 0
-        size = node.state.size
-        board = node.state.board
-
-        for i in range(size):
-            for j in range(size):
-                tile = board[i * size + j]
-                if tile != 0:
-                    gi, gj = (tile - 1) // size, (tile - 1) % size
-                    distance += abs(i - gi) + abs(j - gj)
-        return distance
-
-    def misplaced_numbers(self, node):
-        pass
-
-    def gaschnig(self, node):
-        pass
-
 
 class NPuzzleState(State):
     def __init__(self, board, size):
@@ -146,3 +113,77 @@ def n_puzzle_move(state, delta):
     new_board[blank], new_board[neighbor] = new_board[neighbor], new_board[blank]
 
     return NPuzzleState(tuple(new_board), state.size)
+
+
+class NPuzzleHeuristics:
+
+    def misplaced_numbers(self, node):
+        misplaced = 0
+        board = node.state.board
+        for i in range(len(board)):
+            if board[i] != i + 1:
+                misplaced += 1
+        return misplaced
+
+    def manhattan(self, node):
+        distance = 0
+        size = node.state.size
+        board = node.state.board
+
+        for i in range(size):
+            for j in range(size):
+                tile = board[i * size + j]
+                if tile != 0:
+                    gi, gj = (tile - 1) // size, (tile - 1) % size
+                    distance += abs(i - gi) + abs(j - gj)
+        return distance
+
+    def linear_conflict(self, node):
+        distance = 0
+        size = node.state.size
+        board = node.state.board
+        for i in range(size):
+            for j in range(size):
+                tile = board[i * size + j]
+                if tile != 0:
+                    gi, gj = (tile - 1) // size, (tile - 1) % size
+                    distance += abs(i - gi) + abs(j - gj)
+                    if i != gi or j != gj:
+                        distance += self.check_row(size, board, i, j, gi)
+                        distance += self.check_column(size, board, i, j, gj)
+        return distance
+
+    def check_row(self, size, board, i, j, gi):
+        distance = 0
+        if i == gi:
+            for k in range(size):
+                tile_i = i * size + k
+                tile = board[tile_i]
+                goal_i = (tile - 1) // size
+                if k != j and tile != 0 and goal_i == i:
+                    distance += 2
+        return distance
+
+    def check_column(self, size, board, i, j, gj):
+        distance = 0
+        if j == gj:
+            for k in range(size):
+                tile_i = k * size + j
+                tile = board[tile_i]
+                goal_j = (tile - 1) % size
+                if k != i and tile != 0 and goal_j == gj:
+                    distance += 2
+        return distance
+
+    def gaschnig(self, node):
+        state = node.state.board
+        count = node.state.size
+        for i in range(count):
+            if state[i] == i+1:
+                count -= 1
+            else:
+                for j in range(i + 1, count):
+                    if state[i] == j+1 and state[j] == i+1:
+                        count -= 2
+                        break
+        return count
