@@ -8,10 +8,10 @@ class NPuzzle(MyProblem):
     squares is a blank. A state is represented as a tuple of length n*n, where  element at
     index i represents the tile number  at index i (0 if it's an empty square) """
 
-    def __init__(self, initial, n):
+    def __init__(self, initial):
         """ Define goal state and initialize a problem """
-        self.n = n
-        actions_list = [NPuzzleMoveUp(n), NPuzzleMoveDown(n), NPuzzleMoveLeft(n), NPuzzleMoveRight(n)]
+        self.n = initial.size
+        actions_list = [NPuzzleMoveUp(self.n), NPuzzleMoveDown(self.n), NPuzzleMoveLeft(self.n), NPuzzleMoveRight(self.n)]
         super().__init__(initial, actions_list, None)
 
     def goal_test(self, state):
