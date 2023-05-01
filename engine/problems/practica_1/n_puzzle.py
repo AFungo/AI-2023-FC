@@ -14,10 +14,6 @@ class NPuzzle(MyProblem):
         actions_list = [NPuzzleMoveUp(n), NPuzzleMoveDown(n), NPuzzleMoveLeft(n), NPuzzleMoveRight(n)]
         super().__init__(initial, actions_list, None)
 
-    def goal_test(self, state):
-        """ Given a state, return True if state is a goal state or False, otherwise """
-        return state.is_goal()
-
     def check_solvability(self, state):
         """ Checks if the given state is solvable """
 
@@ -179,11 +175,11 @@ class NPuzzleHeuristics:
         state = node.state.board
         count = node.state.size
         for i in range(count):
-            if state[i] == i+1:
+            if state[i] == i + 1:
                 count -= 1
             else:
                 for j in range(i + 1, count):
-                    if state[i] == j+1 and state[j] == i+1:
+                    if state[i] == j + 1 and state[j] == i + 1:
                         count -= 2
                         break
         return count

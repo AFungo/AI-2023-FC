@@ -6,6 +6,7 @@ class MyProblem:
     this and implement the methods actions and result, and possibly
     __init__, goal_test, and path_cost. Then you will create instances
     of your subclass and solve them with the various search functions."""
+
     def __init__(self, initial, action_list, goal=None):
         """The constructor specifies the initial state, and possibly a goal
         state, if there is a unique goal. Your subclass's constructor can add
@@ -13,6 +14,7 @@ class MyProblem:
         self.goal = goal
         self.actions_list = action_list
         self.initial = initial
+        self.explored_node = 0
 
     def initial_state(self):
         return self.initial
@@ -36,10 +38,14 @@ class MyProblem:
         state to self.goal or checks for state in self.goal if it is a
         list, as specified in the constructor. Override this method if
         checking against a single self.goal is not enough."""
-        if isinstance(self.goal, list):
-            return is_in(state, self.goal)
-        else:
-            return state == self.goal
+        self.explored_node += 1
+        try:
+            return state.is_goal()
+        except ValueError:
+            if isinstance(self.goal, list):
+                return is_in(state, self.goal)
+            else:
+                return state == self.goal
 
     def path_cost(self, c, state1, action, state2):
         """Return the cost of a solution path that arrives at state2 from

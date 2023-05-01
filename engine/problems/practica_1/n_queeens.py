@@ -11,21 +11,6 @@ class NQueensProblem(MyProblem):
                 actions_list.append(Place_A_Queen_In_Board(col, row))
         super().__init__(initial_state, actions_list)
 
-    def goal_test(self, state):
-        """ Given a state, return True if state is a goal state or False, otherwise """
-        return state.is_goal()
-
-    def h(self, node):
-        """ Return the heuristic value for a given state. Default heuristic function used is
-        h(n) = number of misplaced tiles """
-        h = 0
-        board = node.state.board
-        for i in range(len(board)):
-            if board[i] != i + 1:
-                h += 1
-        return h
-        # return sum(s != g for (s, g) in zip(n, node.state))
-
 
 class NQueensHeuristics:
 
@@ -48,7 +33,8 @@ class NQueensHeuristics:
             for col in range(current_col, node.state.n):
                 col_attacked = 0
                 for row in range(node.state.n):
-                    if not self.conflicted(node.state.board, row, col):
+                    confli = self.conflicted(node.state.board, row, col)
+                    if not confli:
                         col_attacked += 1
                 col_attackeds.append(col_attacked)
         except ValueError:
