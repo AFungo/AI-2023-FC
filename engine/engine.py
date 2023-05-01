@@ -19,35 +19,35 @@ from engine.algorithms.search_algorithm import SearchAlgorithm
 
 
 class Engine:
-    def __init__(self, problem, algorithm, initial_state, goal_state=None, heuristic=None, algorithm_params=None):
-        self.problem = ProblemFactory(problem, initial_state, goal_state).create
+    def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None):
+        self.problem = ProblemFactory(problem, problem_params).create()
         self.heuristic = HeuristicFactory(problem, heuristic).create()
-        algorithm_factory = AlgorithmFactory(algorithm, problem, heuristic, params=algorithm_params)
+        algorithm_factory = AlgorithmFactory(algorithm, self.problem, self.heuristic, params=algorithm_params)
         self.algorithm = algorithm_factory.create()
-        self.initial_state = initial_state
-        self.goal_state = goal_state
+        self.problem_params = problem_params
 
     def solve(self):
         node_solution = self.algorithm.search()
-        return node_solution.solution()
+        return node_solution
 
 
 class ProblemFactory:
 
-    def __init__(self, problem, initial_state, goal_state=None):
+    def __init__(self, problem, problem_params):
         self.problem = problem
-        self.initial_state = initial_state
-        self.goal_state = goal_state
+        self.problem_params = problem_params
 
     def create(self):
         if self.problem == Problems.ROMANIA_MAP:
-            return RomaniaMap(self.initial_state, self.goal_state)
-        elif self.problem == Problems.N_PUZZLE:
-            return NPuzzle(self.initial_state, self.goal_state)
+            return RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"])
+        elif self.problem == Problems.NPUZZLE:
+            return NPuzzle(self.problem_params["initial_state"])
         elif self.problem == Problems.N_QUEENS:
-            return NQueensProblem(self.initial_state)
+            pass
+            # return NQueensProblem.__init__(self.initial_state)
         elif self.problem == Problems.CANNIBALS_AND_MISSIONARIES:
-            return MissionariesAndCannibalsProblem(self.initial_state)
+            pass
+            # return MissionariesAndCannibalsProblem.__init__(self.initial_state)
         Exception("Problem type not supported")
 
 
@@ -61,7 +61,7 @@ class HeuristicFactory:
         if self.heuristic is None:
             return None
 
-        if self.problem == Problems.N_PUZZLE:
+        if self.problem == Problems.NPUZZLE:
             if self.heuristic == Heuristic.MANHATTAN:
                 return NPuzzleHeuristics().manhattan
             elif self.heuristic == Heuristic.MISPLACED_NUMBERS:
@@ -122,7 +122,7 @@ class AlgorithmFactory:
 
 class Problems(Enum):
     ROMANIA_MAP = auto()
-    N_PUZZLE = auto()
+    NPUZZLE = auto()
     N_QUEENS = auto()
     CANNIBALS_AND_MISSIONARIES = auto()
 
