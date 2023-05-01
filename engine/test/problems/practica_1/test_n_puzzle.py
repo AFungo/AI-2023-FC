@@ -28,7 +28,7 @@ def params():
                                                      11, 12, 13, 14, 15,
                                                      16, 17, 18, 0, 19,
                                                      20, 21, 22, 23, 24), 5)
-    params['n_puzzle_problem'] = NPuzzle(params['goal_initial_state'], 3)
+    params['n_puzzle_problem'] = NPuzzle(params['goal_initial_state'])
     os.remove("n_puzzle_test_suite.txt")
     params['f'] = open("n_puzzle_test_suite.txt", "w")
     # write to the file
@@ -51,7 +51,7 @@ def test_3_puzzle_astar_search_default_heuristic_winner_state(params):
 
 
 def test_3_puzzle_astar_search_default_heuristic_medium_state(params):
-    problem = NPuzzle(params['medium_initial_state'], 3)
+    problem = NPuzzle(params['medium_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().misplaced_numbers)
     solution = algorithm.search().solution()
     expected = []
@@ -59,7 +59,7 @@ def test_3_puzzle_astar_search_default_heuristic_medium_state(params):
 
 
 def test_3_puzzle_astar_search_default_heuristic_advanced_state(params):
-    problem = NPuzzle(params['advanced_initial_state'], 3)
+    problem = NPuzzle(params['advanced_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().misplaced_numbers)
     solution = algorithm.search().solution()
     expected = []
@@ -67,7 +67,7 @@ def test_3_puzzle_astar_search_default_heuristic_advanced_state(params):
 
 
 def test_3_puzzle_astar_search_manhattan_heuristic_medium_initial_state(params):
-    problem = NPuzzle(params['medium_initial_state'], 3)
+    problem = NPuzzle(params['medium_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().manhattan)
     solution = algorithm.search().solution()
     expected = []
@@ -75,7 +75,7 @@ def test_3_puzzle_astar_search_manhattan_heuristic_medium_initial_state(params):
 
 
 def test_3_puzzle_best_first_search_manhattan_heuristic_medium_initial_state(params):
-    problem = NPuzzle(params['medium_initial_state'], 3)
+    problem = NPuzzle(params['medium_initial_state'])
     bfs = BestFirstSearch(problem, NPuzzleHeuristics().manhattan)
     bfs_book = BestFirstGraphSearch(problem, NPuzzleHeuristics().manhattan)
     bfs_solution = bfs.search().solution()
@@ -85,7 +85,7 @@ def test_3_puzzle_best_first_search_manhattan_heuristic_medium_initial_state(par
 
 
 def test_3_puzzle_uniform_cost_search_manhattan_heuristic_medium_initial_state(params):
-    problem = NPuzzle(params['medium_initial_state'], 3)
+    problem = NPuzzle(params['medium_initial_state'])
     bfs = UniformCostSearch(problem)
     bfs_book = BestFirstGraphSearch(problem, NPuzzleHeuristics().manhattan)
     bfs_solution = bfs.search().solution()
@@ -96,7 +96,7 @@ def test_3_puzzle_uniform_cost_search_manhattan_heuristic_medium_initial_state(p
 
 def test_3_puzzle_astar_search_manhattan_heuristic_advanced_initial_state(params):
     params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    problem = NPuzzle(params['advanced_initial_state'], 3)
+    problem = NPuzzle(params['advanced_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().manhattan)
     solution = algorithm.search().solution()
     expected = []
@@ -106,7 +106,7 @@ def test_3_puzzle_astar_search_manhattan_heuristic_advanced_initial_state(params
 
 def test_3_puzzle_astar_search_linear_conflict_advanced_initial_state(params):
     # params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    problem = NPuzzle(params['advanced_initial_state'], 3)
+    problem = NPuzzle(params['advanced_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().linear_conflict)
     solution = algorithm.search().solution()
     expected = []
@@ -115,7 +115,7 @@ def test_3_puzzle_astar_search_linear_conflict_advanced_initial_state(params):
 
 def test_3_puzzle_astar_search_gasching_advanced_initial_state(params):
     # params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    problem = NPuzzle(params['advanced_initial_state'], 3)
+    problem = NPuzzle(params['advanced_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().gaschnig)
     solution = algorithm.search().solution()
     expected = []
@@ -124,7 +124,7 @@ def test_3_puzzle_astar_search_gasching_advanced_initial_state(params):
 
 def test_5_puzzle_astar_search_manhattan_heuristic(params):
     params['f'].write("5 - puzzle" + datetime.datetime.now().__str__() + " - ")
-    problem = NPuzzle(params['5_puzzle_initial_state'], 3)
+    problem = NPuzzle(params['5_puzzle_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().manhattan)
     solution = algorithm.search().solution()
     expected = []
