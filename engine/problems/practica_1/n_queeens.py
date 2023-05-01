@@ -41,6 +41,20 @@ class NQueensHeuristics:
             return not_attack
         return not_attack
 
+    def least_attacked_col(self, node):
+        col_attackeds = []
+        try:
+            current_col = node.state.board.index(-1)
+            for col in range(current_col, node.state.n):
+                col_attacked = 0
+                for row in range(node.state.n):
+                    if not self.conflicted(node.state.board, row, col):
+                        col_attacked += 1
+                col_attackeds.append(col_attacked)
+        except ValueError:
+            return 0
+        return min(col_attackeds)
+
     def conflicted(self, board, row, col):
         """Would placing a queen at (row, col) conflict with anything?"""
         return any(self.conflict(row, col, board[c], c)
