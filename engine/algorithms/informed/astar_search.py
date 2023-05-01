@@ -9,5 +9,5 @@ class AstarSearch:
         self.heuristic = heuristic
 
     def search(self):
-        self.heuristic = memoize(self.heuristic or self.problem.heuristic, 'h')
+        self.heuristic = memoize(self.heuristic, 'h')
         return BestFirstGraphSearch(self.problem, lambda n: n.path_cost + self.heuristic(n)).search()
