@@ -1,8 +1,11 @@
 from random import random
 
-from engine.engine import Engine
+from numpy.core._multiarray_umath import sqrt
+
+from engine.engine import Engine, Heuristic, UninformedAlgorithms, Problems, InformedAlgorithms
 from engine.problems.practica_1.romania_map import romania_map
 from main.utils import export_data
+import pandas as pd
 
 
 class Execute:
@@ -33,9 +36,36 @@ def romania_states_generator():
         init_goal.append(new_state)
     return init_goal
 
+def romania_problem_generator(list_initial):
+    data = {}
+    heuristics = [Heuristic.STRAIGTH_LINE_DISTANCE]
+    algorithm_uniformed = list(UninformedAlgorithms)
+    algorithm_informed = list(InformedAlgorithms)
+    for init in list_initial:
+        for alg in algorithm_uniformed:
+            data = {'problem': Problems.ROMANIA_MAP.name,
+                    'algorithm': alg.name,
+                    'algorithm_params': " ",
+                    'heuristic': " ",
+                    'initial_state': init[0],
+                    'goal_state': init[1],
+                    'output_file': "romania_map_metrics.csv"}
+            df = pd.DataFrame(data, index=[0])
+            df.to_csv('cfg_files/romania_map.csv', mode='a', header=False, index=False)
+        for alg in algorithm_informed:
+            for heu in heuristics:
+                data = {'problem': Problems.ROMANIA_MAP.name,
+                        'algorithm': alg.name,
+                        'algorithm_params': " ",
+                        'heuristic': heu.name,
+                        'initial_state': init[0],
+                        'goal_state': init[1],
+                        'output_file': "romania_map_metrics.csv"}
+                df = pd.DataFrame(data, index=[0])
+                df.to_csv('cfg_files/romania_map.csv', mode='a', header=False, index=False)
 
 if __name__ == "__main__":
     # data = None
     # execute = Execute(data)
     # execute.main()
-    romania_states_generator()
+    romania_problem_generator(romania_states_generator())

@@ -33,6 +33,37 @@ def n_queens_states_generator():
     return states
 
 
+def n_queens_problem_generator(list_initial):
+    data = {}
+    heuristics = [Heuristic.UNATTACHED_SQUARES]
+    algorithm_uniformed = list(UninformedAlgorithms)
+    algorithm_informed = list(InformedAlgorithms)
+    for init in list_initial:
+        for alg in algorithm_uniformed:
+            data = {'problem': Problems.N_QUEENS.name,
+                    'algorithm': alg.name,
+                    'algorithm_params': " ",
+                    'heuristic': " ",
+                    'number_queens': init,
+                    'goal_state': " ",
+                    'output_file': "n_queens_metrics.csv"}
+            df = pd.DataFrame(data, index=[0])
+            df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
+
+        for alg in algorithm_informed:
+            for heu in heuristics:
+                data = {'problem': Problems.N_QUEENS.name,
+                        'algorithm': alg.name,
+                        'algorithm_params': " ",
+                        'heuristic': heu.name,
+                        'number_queens': init,
+                        'goal_state': " ",
+                        'output_file': "n_queens_metrics.csv"}
+                df = pd.DataFrame(data, index=[0])
+                df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
+
+
 if __name__ == "__main__":
-    execute = Execute()
-    execute.main("cfg_files/n_queens.csv")
+    # execute = Execute()
+    # execute.main("cfg_files/n_queens.csv")
+    n_queens_problem_generator(n_queens_states_generator())

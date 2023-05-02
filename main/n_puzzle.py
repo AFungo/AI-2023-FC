@@ -45,6 +45,7 @@ class Execute:
         data = {}
         heuristics = [Heuristic.MANHATTAN, Heuristic.GASCHNIG, Heuristic.MISPLACED_NUMBERS, Heuristic.LINERAR_CONFLICT]
         algorithm_uniformed = list(UninformedAlgorithms)
+        algorithm_informed = list(InformedAlgorithms)
         for init in list_initial:
             for alg in algorithm_uniformed:
                 data = {'problem': Problems.NPUZZLE.name,
@@ -57,6 +58,18 @@ class Execute:
                         'output_file': "n_puzzle_metrics.csv"}
                 df = pd.DataFrame(data, index=[0])
                 df.to_csv('cfg_files/n_puzzle.csv', mode='a', header=False, index=False)
+            for alg in algorithm_informed:
+                for heu in heuristics:
+                    data = {'problem': Problems.NPUZZLE.name,
+                            'algorithm': alg.name,
+                            'algorithm_params': " ",
+                            'heuristic': heu.name,
+                            'initial_state': f'{init.__str__()}',
+                            'n': int(sqrt(len(init))),
+                            'goal_state': " ",
+                            'output_file': "n_puzzle_metrics.csv"}
+                    df = pd.DataFrame(data, index=[0])
+                    df.to_csv('cfg_files/n_puzzle.csv', mode='a', header=False, index=False)
 
 
 if __name__ == "__main__":
