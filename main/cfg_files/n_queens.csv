@@ -1,1 +1,351 @@
-problem,algorithm,algorithm_params,heuristic,number_queens,n,goal_state,output_file
+problem,algorithm,algorithm_params,heuristic,number_queens,goal_state,output_file
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,0, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,0, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,0, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,0, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,0, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,0, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,0, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,1, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,1, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,1, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,1, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,1, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,1, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,1, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,2, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,2, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,2, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,2, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,2, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,2, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,2, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,3, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,3, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,3, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,3, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,3, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,3, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,3, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,4, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,4, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,4, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,4, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,4, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,4, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,5, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,5, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,5, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,5, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,5, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,5, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,5, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,6, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,6, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,6, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,6, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,6, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,6, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,6, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,7, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,7, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,7, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,7, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,7, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,7, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,7, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,8, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,8, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,8, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,8, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,8, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,8, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,8, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,9, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,9, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,9, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,9, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,9, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,9, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,9, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,10, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,10, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,10, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,10, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,10, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,10, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,10, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,11, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,11, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,11, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,11, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,11, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,11, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,11, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,12, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,12, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,12, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,12, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,12, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,12, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,12, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,13, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,13, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,13, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,13, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,13, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,13, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,13, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,14, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,14, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,14, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,14, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,14, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,14, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,14, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,15, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,15, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,15, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,15, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,15, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,15, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,15, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,16, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,16, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,16, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,16, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,16, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,16, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,16, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,17, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,17, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,17, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,17, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,17, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,17, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,17, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,18, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,18, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,18, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,18, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,18, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,18, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,18, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,19, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,19, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,19, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,19, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,19, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,19, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,19, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,20, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,20, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,20, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,20, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,20, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,20, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,20, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,21, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,21, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,21, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,21, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,21, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,21, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,21, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,22, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,22, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,22, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,22, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,22, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,22, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,22, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,23, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,23, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,23, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,23, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,23, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,23, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,23, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,24, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,24, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,24, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,24, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,24, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,24, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,24, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,25, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,25, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,25, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,25, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,25, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,25, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,25, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,26, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,26, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,26, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,26, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,26, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,26, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,26, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,27, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,27, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,27, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,27, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,27, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,27, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,27, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,28, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,28, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,28, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,28, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,28, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,28, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,28, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,29, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,29, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,29, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,29, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,29, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,29, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,29, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,30, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,30, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,30, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,30, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,30, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,30, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,30, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,31, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,31, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,31, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,31, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,31, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,31, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,31, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,32, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,32, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,32, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,32, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,32, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,32, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,32, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,33, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,33, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,33, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,33, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,33, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,33, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,33, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,34, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,34, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,34, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,34, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,34, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,34, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,34, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,35, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,35, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,35, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,35, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,35, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,35, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,35, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,36, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,36, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,36, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,36, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,36, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,36, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,36, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,37, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,37, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,37, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,37, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,37, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,37, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,37, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,38, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,38, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,38, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,38, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,38, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,38, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,38, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,39, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,39, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,39, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,39, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,39, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,39, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,39, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,40, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,40, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,40, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,40, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,40, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,40, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,40, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,41, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,41, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,41, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,41, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,41, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,41, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,41, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,42, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,42, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,42, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,42, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,42, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,42, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,42, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,43, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,43, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,43, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,43, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,43, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,43, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,43, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,44, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,44, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,44, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,44, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,44, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,44, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,44, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,45, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,45, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,45, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,45, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,45, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,45, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,45, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,46, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,46, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,46, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,46, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,46, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,46, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,46, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,47, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,47, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,47, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,47, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,47, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,47, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,47, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,48, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,48, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,48, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,48, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,48, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,48, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,48, ,n_queens_metrics.csv
+N_QUEENS,BREADTH_FIRST_SEARCH, , ,49, ,n_queens_metrics.csv
+N_QUEENS,DEPTH_FIRST_SEARCH, , ,49, ,n_queens_metrics.csv
+N_QUEENS,UNIFORM_COST_SEARCH, , ,49, ,n_queens_metrics.csv
+N_QUEENS,ITERATIVE_DEEPENING_SEARCH, , ,49, ,n_queens_metrics.csv
+N_QUEENS,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,49, ,n_queens_metrics.csv
+N_QUEENS,GREEDY_BEST_FIRST_SEARCH, ,UNATTACHED_SQUARES,49, ,n_queens_metrics.csv
+N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,49, ,n_queens_metrics.csv
