@@ -2,6 +2,8 @@ from enum import Enum, auto
 
 from engine.algorithms.informed.astar_search import AstarSearch
 from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
+from engine.algorithms.informed.greedy_best_first_Search import GreedyBestFirstSearch
+from engine.algorithms.uninformed.bidirectional_breath_search import BidirectionalBreathSearch
 from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirstGraphSearch
 from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
 from engine.algorithms.uninformed.depth_first_graph_search import DepthFirstGraphSearch
@@ -101,7 +103,7 @@ class HeuristicFactory:
                 return NQueensHeuristics.unattacked_squares
         elif self.problem == Problems.ROMANIA_MAP:
             if self.heuristic == Heuristic.STRAIGTH_LINE_DISTANCE:
-                return RomaniaMapHeuristics.straigth_line_distance
+                return RomaniaMap.straigth_line_distance
         Exception("Problem or Heuristic type not supported")
 
 
@@ -126,8 +128,8 @@ class AlgorithmFactory:
     def create_informed_algorithm(self):
         if self.algorithm == InformedAlgorithms.ASTAR_SEARCH:
             return AstarSearch(self.problem, self.heuristic)
-        elif self.algorithm == InformedAlgorithms.BEST_FIRST_GRAPH_SEARCH:
-            return BestFirstGraphSearch(self.problem, self.heuristic)
+        elif self.algorithm == InformedAlgorithms.GREEDY_BEST_FIRST_SEARCH:
+            return GreedyBestFirstSearch(self.problem, self.heuristic)
         Exception("Algorithm type not supported")
 
     def create_uninformed_algorithm(self):
@@ -135,14 +137,8 @@ class AlgorithmFactory:
             return BreadthFirstSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
             return DepthFirstSearch(self.problem)
-        elif self.algorithm == UninformedAlgorithms.BREADTH_FIRST_GRAPH_SEARCH:
-            return BreadthFirstGraphSearch(self.problem)
-        elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_GRAPH_SEARCH:
-            return DepthFirstGraphSearch(self.problem)
-        elif self.algorithm == UninformedAlgorithms.DEPTH_LIMITED_SEARCH:
-            if 'depth_limit' not in self.params:
-                Exception("Depth limit not specified")
-            return DepthLimitedSearch(self.problem, self.params['depth_limit'])
+        elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
+            return BidirectionalBreathSearch(self.problem, self.params['goal_state'], lambda l: 0, lambda l: 0)
         Exception("Algorithm type not supported")
 
 
