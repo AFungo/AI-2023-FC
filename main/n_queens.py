@@ -26,6 +26,13 @@ class Execute:
         self.data = pd.read_csv(file_name)
 
 
+def n_queens_states_generator():
+    states = []
+    for i in range(50):
+        states.append(i)
+    return states
+
+
 if __name__ == "__main__":
     execute = Execute()
     execute.main("cfg_files/n_queens.csv")
