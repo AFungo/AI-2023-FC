@@ -19,6 +19,7 @@ from engine.algorithms.search_algorithm import SearchAlgorithm
 import time
 import psutil
 
+
 class Engine:
     def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None):
         self.problem = ProblemFactory(problem, problem_params).create()
@@ -28,7 +29,6 @@ class Engine:
         self.problem_params = problem_params
 
     def solve(self):
-
         process = psutil.Process()
         start_memory = process.memory_info().rss
         start_time = time.time()
@@ -55,6 +55,7 @@ class Engine:
                 "path": list(map(lambda l: l.state.__str__(), node_solution.path())).__str__(),
                 "solution": list(map(lambda l: l.__str__(), node_solution.solution())).__str__()
                 }
+
 
 class ProblemFactory:
 
@@ -167,13 +168,17 @@ class AlgorithmsType(Enum):
 
 
 class InformedAlgorithms(Enum):
-    BEST_FIRST_GRAPH_SEARCH = auto()
+    GREEDY_BEST_FIRST_SEARCH = auto()
     ASTAR_SEARCH = auto()
+    # BEST_FIRST_GRAPH_SEARCH = auto()
 
 
 class UninformedAlgorithms(Enum):
-    DEPTH_FIRST_GRAPH_SEARCH = auto()
-    DEPTH_FIRST_SEARCH = auto()
-    BREADTH_FIRST_GRAPH_SEARCH = auto()
     BREADTH_FIRST_SEARCH = auto()
-    DEPTH_LIMITED_SEARCH = auto()
+    DEPTH_FIRST_SEARCH = auto()
+    UNIFORM_COST_SEARCH = auto()
+    ITERATIVE_DEEPENING_SEARCH = auto()
+    BIDIRECTIONAL_BREADTH_FIRST_SEARCH = auto()
+    # DEPTH_FIRST_GRAPH_SEARCH = auto()
+    # BREADTH_FIRST_GRAPH_SEARCH = auto()
+    # DEPTH_LIMITED_SEARCH = auto()
