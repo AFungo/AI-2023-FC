@@ -8,7 +8,7 @@ class NQueensProblem(MyProblem):
         actions_list = []
         for col in range(n):
             for row in range(n):
-                actions_list.append(Place_A_Queen_In_Board(col, row))
+                actions_list.append(PlaceAQueenInBoard(col, row))
         super().__init__(initial_state, actions_list)
 
 
@@ -84,7 +84,7 @@ class NQueensState(State):
                 row1 + col1 == row2 + col2)  # same / diagonal
 
 
-class Place_A_Queen_In_Board(Actions):
+class PlaceAQueenInBoard(Actions):
 
     def __init__(self, col, row):
         self.col = col
@@ -120,3 +120,28 @@ class Place_A_Queen_In_Board(Actions):
             new_board[self.col] = self.row
             return NQueensState(state.n, tuple(new_board))
         return ()
+
+
+#   Implementation for bidirectional search
+
+# class NQueenInverted(NQueensProblem):
+#     def __init__(self, n, initial_state):
+#         super().__init__(n)
+#         self.initial = NQueensState(n, tuple(initial_state))
+#         self.actions_list = []
+#         for col in range(n-1, -1, -1):
+#             for row in range(n-1, -1, -1):
+#                 self.actions_list.append(RemoveAQueenInBoard(col, row))
+#
+#
+# class RemoveAQueenInBoard(PlaceAQueenInBoard):
+#
+#     def is_enable(self, state):
+#         return state.board[self.col] == self.row
+#
+#     def execute(self, state):
+#         if self.is_enable(state):
+#             new_board = list(state.board)
+#             new_board[self.col] = -1
+#             return NQueensState(state.n, tuple(new_board))
+#         return ()

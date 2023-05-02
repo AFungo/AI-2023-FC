@@ -3,6 +3,11 @@ from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirst
 from engine.algorithms.uninformed.depth_first_search_no_cycles import DepthFirstSearchNoCycles
 from engine.problems.practica_1.n_queeens import NQueensState, NQueensProblem, NQueensHeuristics
 from engine.algorithms.informed.astar_search import AstarSearch
+from engine.algorithms.uninformed.bidirectional_breath_search import BidirectionalBreathSearch
+from engine.algorithms.informed.greedy_best_first_Search import GreedyBestFirstSearch
+from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
+import time
+import psutil
 
 '''
     Tests check state is or not goal
@@ -116,3 +121,39 @@ def test_ten_queen_astar_search_with_heuristic():
     solution = AstarSearch(ten_queen, NQueensHeuristics().unattacked_squares).search()
     print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
     assert ten_queen.goal_test(solution.state)
+
+
+def test_four_queen_astar_search_with_heuristic2():
+    four_queen = NQueensProblem(7)
+    solution = AstarSearch(four_queen, NQueensHeuristics().least_attacked_col).search()
+    print("\n\033[32mWin state: \033[32m" + str(solution.state.board))
+    assert four_queen.goal_test(solution.state)
+
+
+def test_four_queen_nodes_explored():
+    four_queen = NQueensProblem(5)
+    process = psutil.Process()
+    start_memory = process.memory_info().rss
+    start_time = time.time()
+    solution = AstarSearch(four_queen, NQueensHeuristics().unattacked_squares).search()
+    end_memory = process.memory_info().rss
+    end_time = time.time()
+    memory_usage = (end_memory - start_memory) / 1024 / 1024
+    elapsed_time = end_time - start_time
+    print(f"\n\033[33mRun time: \033[33m {elapsed_time:.2f} Sec")
+    print(f"\033[34mMemory use: \033[34m {memory_usage:.2f} MB")
+    print(f"\033[32mWin state: \033[32m {solution.state.board}")
+    print(f"\033[31mNode explored: \033[31m {four_queen.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {four_queen.generated_nodes}")
+    assert four_queen.goal_test(solution.state)
+
+
+#   Test for bidirectional search
+
+# def test_four_queen_Biderectional():
+#     init_problem = NQueensProblem(4)
+#     final_problem = NQueenInverted(4, (1, 3, 0, 2))
+#     algorithm = BidirectionalBreathSearch(init_problem, final_problem, lambda l: 0, lambda l: 0)
+#     solution = list(map(lambda l: l.__str__(), algorithm.search().solution()))
+#     expected = []
+#     assert expected == solution
