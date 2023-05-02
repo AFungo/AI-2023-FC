@@ -43,7 +43,7 @@ class ProblemFactory:
         elif self.problem == Problems.NPUZZLE:
             return NPuzzle(self.problem_params["initial_state"])
         elif self.problem == Problems.N_QUEENS:
-            pass
+            return NQueensProblem(self.problem_params["number_queens"])
             # return NQueensProblem.__init__(self.initial_state)
         elif self.problem == Problems.CANNIBALS_AND_MISSIONARIES:
             pass
