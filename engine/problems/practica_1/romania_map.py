@@ -24,7 +24,7 @@ class RomaniaMap(MyProblem):
 
         return m
 
-    def h(self, node):
+    def straigth_line_distance(self, node):
         """h function is straight-line distance from a node's state to goal."""
         locs = getattr(romania_map, 'locations', None)
         if locs:
