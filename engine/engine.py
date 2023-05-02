@@ -38,16 +38,22 @@ class Engine:
         end_memory = process.memory_info().rss
         end_time = time.time()
 
-        memory_usage = end_memory - start_memory
-        run_time = end_time - start_time
+        memory_usage = end_memory - start_memory / 1024 / 1024
+        run_time = round(end_time - start_time, 5)
 
-        return {"explored_nodes": self.problem.explored_node,
-                # "generated_nodes": self.problem.generated_node,
+        return {"problem": self.problem.__class__.__name__,
+                "algorithm": self.algorithm.__class__.__name__,
+                "heuristic": self.heuristic.__name__,
+                "initial_state": self.problem.initial_state().__str__(),
+                "goal_state": node_solution.state.__str__(),
+                "depth": node_solution.depth,
+                "explored_nodes": self.problem.explored_node,
+                "generated_nodes": self.problem.generated_nodes,
                 "Memory": memory_usage,
                 "run_time": run_time,
-                "path": node_solution.path(),
                 "path_cost": node_solution.path_cost,
-                "solution": node_solution.solution()
+                "path": list(map(lambda l: l.state.__str__(), node_solution.path())).__str__(),
+                "solution": list(map(lambda l: l.__str__(), node_solution.solution())).__str__()
                 }
 
 class ProblemFactory:
