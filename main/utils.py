@@ -3,7 +3,7 @@ import pandas as pd
 from engine.engine import UninformedAlgorithms, InformedAlgorithms
 
 
-def algorithm_parser(self, name):
+def algorithm_parser(name):
     try:
         algorithm = UninformedAlgorithms.__members__[name]
     except KeyError:
