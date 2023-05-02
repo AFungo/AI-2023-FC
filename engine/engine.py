@@ -16,7 +16,8 @@ from engine.problems.practica_1.n_queeens import NQueensHeuristics
 from engine.problems.practica_1.romania_map import RomaniaMapHeuristics
 from engine.problems.problem import Problem
 from engine.algorithms.search_algorithm import SearchAlgorithm
-
+import time
+import psutil
 
 class Engine:
     def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None):
@@ -27,9 +28,33 @@ class Engine:
         self.problem_params = problem_params
 
     def solve(self):
-        node_solution = self.algorithm.search()
-        return node_solution
 
+        process = psutil.Process()
+        start_memory = process.memory_info().rss
+        start_time = time.time()
+
+        node_solution = self.algorithm.search()
+
+        end_memory = process.memory_info().rss
+        end_time = time.time()
+
+        memory_usage = end_memory - start_memory / 1024 / 1024
+        run_time = round(end_time - start_time, 5)
+
+        return {"problem": self.problem.__class__.__name__,
+                "algorithm": self.algorithm.__class__.__name__,
+                "heuristic": self.heuristic.__name__,
+                "initial_state": self.problem.initial_state().__str__(),
+                "goal_state": node_solution.state.__str__(),
+                "depth": node_solution.depth,
+                "explored_nodes": self.problem.explored_node,
+                "generated_nodes": self.problem.generated_nodes,
+                "Memory": memory_usage,
+                "run_time": run_time,
+                "path_cost": node_solution.path_cost,
+                "path": list(map(lambda l: l.state.__str__(), node_solution.path())).__str__(),
+                "solution": list(map(lambda l: l.__str__(), node_solution.solution())).__str__()
+                }
 
 class ProblemFactory:
 

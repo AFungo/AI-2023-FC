@@ -5,9 +5,10 @@ import pytest
 from engine.algorithms.informed.astar_search import AstarSearch
 from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
 from engine.algorithms.uninformed.best_first_search import BestFirstSearch
+from engine.algorithms.uninformed.bidirectional_breath_search import BidirectionalBreathSearch
 from engine.algorithms.uninformed.breadth_first_graph_search import *
 from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
-from engine.problems.practica_1.n_puzzle import NPuzzle, NPuzzleState, NPuzzleHeuristics
+from engine.problems.practica_1.n_puzzle import NPuzzle, NPuzzleState, NPuzzleHeuristics, NPuzzleInverted
 import datetime
 
 
@@ -21,8 +22,8 @@ def params():
                                                    4, 5, 6,
                                                    7, 0, 8), 3)
     params['advanced_initial_state'] = NPuzzleState((4, 1, 2,
-                                                    7, 5, 3,
-                                                    0, 8, 6), 3)
+                                                     7, 5, 3,
+                                                     0, 8, 6), 3)
     params['5_puzzle_initial_state'] = NPuzzleState((1, 2, 3, 4, 5,
                                                      6, 7, 8, 9, 10,
                                                      11, 12, 13, 14, 15,
@@ -108,10 +109,11 @@ def test_3_puzzle_astar_search_linear_conflict_advanced_initial_state(params):
     # params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
     problem = NPuzzle(params['advanced_initial_state'])
     algorithm = AstarSearch(problem, NPuzzleHeuristics().linear_conflict)
-    solution = algorithm.search().solution()
+    solution = list(map(lambda l: l.__str__(), algorithm.search().solution()))
     expected = []
     # params['f'].write(datetime.datetime.now().__str__() + "\n")
     assert expected == solution
+
 
 def test_3_puzzle_astar_search_gasching_advanced_initial_state(params):
     # params['f'].write("3 - puzzle" + datetime.datetime.now().__str__() + " - ")
@@ -122,6 +124,7 @@ def test_3_puzzle_astar_search_gasching_advanced_initial_state(params):
     # params['f'].write(datetime.datetime.now().__str__() + "\n")
     assert expected == solution
 
+
 def test_5_puzzle_astar_search_manhattan_heuristic(params):
     params['f'].write("5 - puzzle" + datetime.datetime.now().__str__() + " - ")
     problem = NPuzzle(params['5_puzzle_initial_state'])
@@ -129,4 +132,14 @@ def test_5_puzzle_astar_search_manhattan_heuristic(params):
     solution = algorithm.search().solution()
     expected = []
     params['f'].write(datetime.datetime.now().__str__() + "\n")
+    assert expected == solution
+
+
+def test_3_puzzle_bidirectional_sear(params):
+    init_problem = NPuzzle(params['advanced_initial_state'])
+    final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
+    final_problem = NPuzzleInverted(final_state)
+    algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan, NPuzzleHeuristics().manhattan)
+    solution = list(map(lambda l: l.__str__(), algorithm.search().solution()))
+    expected = []
     assert expected == solution

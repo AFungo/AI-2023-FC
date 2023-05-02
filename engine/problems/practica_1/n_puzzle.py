@@ -45,6 +45,15 @@ class NPuzzleState(State):
     def __lt__(self, other):
         return self.board.__lt__(other.board)
 
+    def __eq__(self, other):
+        return self.board == other.board
+
+    def __hash__(self):
+        return hash(self.board)
+
+    def __str__(self):
+        return str(self.board)
+
 
 class NPuzzleMoveUp(Actions):
     def __init__(self, n):
@@ -57,6 +66,9 @@ class NPuzzleMoveUp(Actions):
     def execute(self, state):
         delta = -self.n  # up
         return n_puzzle_move(state, delta)
+
+    def __str__(self):
+        return "Move up"
 
 
 class NPuzzleMoveDown(Actions):
@@ -71,6 +83,9 @@ class NPuzzleMoveDown(Actions):
         delta = self.n  # down
         return n_puzzle_move(state, delta)
 
+    def __str__(self):
+        return "Move down"
+
 
 class NPuzzleMoveLeft(Actions):
     def __init__(self, n):
@@ -84,6 +99,9 @@ class NPuzzleMoveLeft(Actions):
         delta = -1  # left
         return n_puzzle_move(state, delta)
 
+    def __str__(self):
+        return "Move left"
+
 
 class NPuzzleMoveRight(Actions):
     def __init__(self, n):
@@ -96,6 +114,9 @@ class NPuzzleMoveRight(Actions):
     def execute(self, state):
         delta = 1  # right
         return n_puzzle_move(state, delta)
+
+    def __str__(self):
+        return "Move right"
 
 
 def n_puzzle_move(state, delta):
@@ -183,3 +204,30 @@ class NPuzzleHeuristics:
                         count -= 2
                         break
         return count
+
+
+class NPuzzleInverted(NPuzzle):
+    def __init__(self, initial):
+        super().__init__(initial)
+        self.actions_list = [NPuzzleMoveUpInverted(self.n), NPuzzleMoveDownInverted(self.n),
+                             NPuzzleMoveLeftInverted(self.n), NPuzzleMoveRightInverted(self.n)]
+
+
+class NPuzzleMoveUpInverted(NPuzzleMoveDown):
+    def __str__(self):
+        return "Move Up"
+
+
+class NPuzzleMoveDownInverted(NPuzzleMoveUp):
+    def __str__(self):
+        return "Move Down"
+
+
+class NPuzzleMoveLeftInverted(NPuzzleMoveRight):
+    def __str__(self):
+        return "Move Left"
+
+
+class NPuzzleMoveRightInverted(NPuzzleMoveLeft):
+    def __str__(self):
+        return "Move Right"

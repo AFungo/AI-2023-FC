@@ -16,6 +16,9 @@ class BidirectionalBreathSearch(SearchAlgorithm):
 
     def search(self):
 
+        if self.initial_state == self.goal_state:
+            return Node(self.initial_state)
+
         node_initial = Node(self.initial_state)
         node_goal = Node(self.goal_state)
 
