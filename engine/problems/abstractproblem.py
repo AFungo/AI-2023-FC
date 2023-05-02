@@ -15,6 +15,7 @@ class MyProblem:
         self.actions_list = action_list
         self.initial = initial
         self.explored_node = 0
+        self.generated_nodes = 0
 
     def initial_state(self):
         return self.initial
@@ -30,6 +31,7 @@ class MyProblem:
         """Return the state that results from executing the given
         action in the given state. The action must be one of
         self.actions(state)."""
+        self.generated_nodes += 1
         new_state = action.execute(state)
         return new_state
 
