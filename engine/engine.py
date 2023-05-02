@@ -16,7 +16,8 @@ from engine.problems.practica_1.n_queeens import NQueensHeuristics
 from engine.problems.practica_1.romania_map import RomaniaMapHeuristics
 from engine.problems.problem import Problem
 from engine.algorithms.search_algorithm import SearchAlgorithm
-
+import time
+import psutil
 
 class Engine:
     def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None):
@@ -27,9 +28,27 @@ class Engine:
         self.problem_params = problem_params
 
     def solve(self):
-        node_solution = self.algorithm.search()
-        return node_solution
 
+        process = psutil.Process()
+        start_memory = process.memory_info().rss
+        start_time = time.time()
+
+        node_solution = self.algorithm.search()
+
+        end_memory = process.memory_info().rss
+        end_time = time.time()
+
+        memory_usage = end_memory - start_memory
+        run_time = end_time - start_time
+
+        return {"explored_nodes": self.problem.explored_node,
+                # "generated_nodes": self.problem.generated_node,
+                "Memory": memory_usage,
+                "run_time": run_time,
+                "path": node_solution.path(),
+                "path_cost": node_solution.path_cost,
+                "solution": node_solution.solution()
+                }
 
 class ProblemFactory:
 
