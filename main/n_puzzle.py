@@ -4,6 +4,7 @@ import re
 import pandas as pd
 import itertools
 import random
+import sys
 
 from numpy.core._multiarray_umath import sqrt
 
@@ -87,4 +88,5 @@ class Execute:
 if __name__ == "__main__":
     execute = Execute()
     string = "NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,'[2, 0, 6, 7, 5, 3, 4, 1, 8]',3, ,n_puzzle_metrics.csv"
-    execute.main(string)
+    arg1 = sys.argv[1]
+    execute.main(arg1)
