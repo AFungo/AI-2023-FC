@@ -134,7 +134,7 @@ class AlgorithmFactory:
 
     def create_uninformed_algorithm(self):
         if self.algorithm == UninformedAlgorithms.BREADTH_FIRST_SEARCH:
-            return BreadthFirstSearch(self.problem)
+            return BreadthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
             return DepthFirstSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
