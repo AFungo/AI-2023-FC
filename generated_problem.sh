@@ -12,12 +12,11 @@ while IFS=',' read -r -u 3 result
 do
       python3 ./main/n_puzzle.py "$result" &
       PID=$!
-      sleep 1
+      sleep 600
       if ps -p $pid > /dev/null; then
         echo "Problem no finish"
 	      kill $PID
-      else
-        
+      else  
         echo "Problem finish"
 	      kill $PID
       fi
