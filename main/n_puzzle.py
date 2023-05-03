@@ -17,7 +17,7 @@ class Execute:
         self.data = None
 
     def main(self, data):
-        split_states = data.split("'")
+        split_states = data.split('"')
         init_state = split_states[1]
         goal_state = "[]"
         if len(split_states) > 3:
@@ -33,7 +33,7 @@ class Execute:
         else:
             heuristic = None
         problem_params = {"initial_state": NPuzzleState(tuple(ast.literal_eval(init_state)), int(values[5]))}
-        algorithm_params = {"goal_problem":NPuzzleInverted(NPuzzleState(tuple(ast.literal_eval(goal_state)), int(values[5])))}
+        algorithm_params = {"goal_problem": NPuzzleInverted(NPuzzleState(tuple(ast.literal_eval(goal_state)), int(values[5])))}
         engine = Engine(problem, algorithm, problem_params, heuristic, algorithm_params=algorithm_params)
         solution = engine.solve()
         export_data(solution, values[7])
