@@ -15,6 +15,8 @@ from engine.problems.practica_1.n_queeens import NQueensProblem
 from engine.problems.practica_1.romania_map import RomaniaMap
 from engine.problems.practica_1.n_puzzle import NPuzzleHeuristics
 from engine.problems.practica_1.n_queeens import NQueensHeuristics
+from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
+from engine.algorithms.uninformed.interative_deepening_search import InterativeDeepeningSearch
 from engine.problems.practica_1.romania_map import RomaniaMapHeuristics
 from engine.problems.problem import Problem
 from engine.algorithms.search_algorithm import SearchAlgorithm
@@ -137,6 +139,10 @@ class AlgorithmFactory:
             return BreadthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
             return DepthFirstSearch(self.problem)
+        elif self.algorithm == UninformedAlgorithms.UNIFORM_COST_SEARCH:
+            return UniformCostSearch(self.problem)
+        elif self.algorithm == UninformedAlgorithms.ITERATIVE_DEEPENING_SEARCH:
+            return InterativeDeepeningSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
             return BidirectionalBreathSearch(self.problem, self.params['goal_problem'], lambda l: 0, lambda l: 0)
         Exception("Algorithm type not supported")
