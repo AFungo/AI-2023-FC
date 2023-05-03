@@ -1,3 +1,6 @@
+import ast
+import re
+
 import pandas as pd
 import itertools
 import random
@@ -5,7 +8,7 @@ import random
 from numpy.core._multiarray_umath import sqrt
 
 from engine.engine import *
-from engine.problems.practica_1.n_puzzle import NPuzzleState
+from engine.problems.practica_1.n_puzzle import NPuzzleState, NPuzzleInverted
 from main.utils import export_data, algorithm_parser
 from engine.engine import UninformedAlgorithms, InformedAlgorithms, Problems
 
@@ -14,18 +17,27 @@ class Execute:
     def __init__(self):
         self.data = None
 
-    def main(self, file_name):
-        self.import_data(file_name)
-        for i, row in self.data.iterrows():
-            problem = Problems.__members__[row['problem']]
-            algorithm = algorithm_parser(row['algorithm'])
-            algorithm_params = row['algorithm_params']
-            heuristic = Heuristic.__members__[row['heuristic']]
-            problem_params = {"initial_state": NPuzzleState(tuple(row['initial_state']), row['n'])}
-            goal_state = row['goal_state']
-            engine = Engine(problem, algorithm, problem_params, heuristic, algorithm_params)
-            solution = engine.solve()
-            export_data(solution, row["output_file"])
+    def main(self, data):
+        split_states = data.split("'")
+        init_state = split_states[1]
+        goal_state = "[]"
+        if len(split_states) > 3:
+            goal_state = split_states[3]
+            data = data.replace(goal_state, '')
+        data = data.replace(init_state, '')
+        values = data.split(',')
+        problem = Problems.__members__[values[0]]
+        algorithm = algorithm_parser(values[1])
+        algorithm_params = values[2]
+        if values[3] != " ":
+            heuristic = Heuristic.__members__[values[3]]
+        else:
+            heuristic = None
+        problem_params = {"initial_state": NPuzzleState(tuple(ast.literal_eval(init_state)), int(values[5]))}
+        algorithm_params = {"goal_problem":NPuzzleInverted(NPuzzleState(tuple(ast.literal_eval(goal_state)), int(values[5])))}
+        engine = Engine(problem, algorithm, problem_params, heuristic, algorithm_params=algorithm_params)
+        solution = engine.solve()
+        export_data(solution, values[7])
 
     def import_data(self, file_name):
         import ast
@@ -74,9 +86,5 @@ class Execute:
 
 if __name__ == "__main__":
     execute = Execute()
-    execute.problem_generator(execute.generator_initial_states(3, 20))
-    execute.problem_generator(execute.generator_initial_states(4, 10))
-    execute.problem_generator(execute.generator_initial_states(5, 10))
-    execute.problem_generator(execute.generator_initial_states(6, 5))
-    execute.problem_generator(execute.generator_initial_states(7, 5))
-    # execute.main("cfg_files/n_puzzle.csv")
+    string = "NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,'[2, 0, 6, 7, 5, 3, 4, 1, 8]',3, ,n_puzzle_metrics.csv"
+    execute.main(string)
