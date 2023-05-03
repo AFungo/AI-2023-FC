@@ -42,10 +42,10 @@ class Engine:
 
         memory_usage = end_memory - start_memory / 1024 / 1024
         run_time = round(end_time - start_time, 5)
-
+        heuristic_name = self.heuristic.__name__ if hasattr(self.heuristic, '__name__') else str(self.heuristic)
         return {"problem": self.problem.__class__.__name__,
                 "algorithm": self.algorithm.__class__.__name__,
-                "heuristic": self.heuristic.__name__,
+                "heuristic": heuristic_name,
                 "initial_state": self.problem.initial_state().__str__(),
                 "goal_state": node_solution.state.__str__(),
                 "depth": node_solution.depth,
@@ -138,7 +138,7 @@ class AlgorithmFactory:
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
             return DepthFirstSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
-            return BidirectionalBreathSearch(self.problem, self.params['goal_state'], lambda l: 0, lambda l: 0)
+            return BidirectionalBreathSearch(self.problem, self.params['goal_problem'], lambda l: 0, lambda l: 0)
         Exception("Algorithm type not supported")
 
 
