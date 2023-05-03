@@ -1,4 +1,3 @@
-from engine.problems.problem import Problem
 from engine.utils import *
 from engine.node import *
 

@@ -866,7 +866,7 @@ def join_nodes(direction, node_parent, node_child):
         solution = node_child
 
     while child is not None:
-        print("\n\n\nState = " + solution.state.__str__() + " ---- Action: " + solution.action.__str__() + "\n\n\n")
+        # print("\n\n\nState = " + solution.state.__str__() + " ---- Action: " + solution.action.__str__() + "\n\n\n")
         solution = Node(child.state, solution, action)
         action = child.action
         child = child.parent

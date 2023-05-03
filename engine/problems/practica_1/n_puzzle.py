@@ -1,9 +1,9 @@
 from engine.problems import utils
-from engine.problems.abstractproblem import *
+from engine.problems.abstract_problem import *
 from engine.problems.utils import is_tuple_ordered
 
 
-class NPuzzle(MyProblem):
+class NPuzzle(AbstractProblem):
     """ The problem of sliding tiles numbered from 1 to n-1 on a nxn board, where one of the
     squares is a blank. A state is represented as a tuple of length n*n, where  element at
     index i represents the tile number  at index i (0 if it's an empty square) """

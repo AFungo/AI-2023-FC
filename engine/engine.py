@@ -18,7 +18,6 @@ from engine.problems.practica_1.n_queeens import NQueensHeuristics
 from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
 from engine.algorithms.uninformed.interative_deepening_search import InterativeDeepeningSearch
 from engine.problems.practica_1.romania_map import RomaniaMapHeuristics
-from engine.problems.problem import Problem
 from engine.algorithms.search_algorithm import SearchAlgorithm
 import time
 import psutil

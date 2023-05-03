@@ -1,7 +1,7 @@
-from engine.problems.abstractproblem import State, Actions, MyProblem
+from engine.problems.abstract_problem import State, Actions, AbstractProblem
 
 
-class NQueensProblem(MyProblem):
+class NQueensProblem(AbstractProblem):
 
     def __init__(self, n):
         initial_state = NQueensState(n, tuple([-1] * n))

@@ -1,8 +1,8 @@
-from engine.problems.abstractproblem import MyProblem, State, Actions
+from engine.problems.abstract_problem import AbstractProblem, State, Actions
 from engine.utils import UndirectedGraph, np, distance
 
 
-class RomaniaMap(MyProblem):
+class RomaniaMap(AbstractProblem):
     """The problem of searching a graph from one node to another."""
 
     def __init__(self, initial, goal):
@@ -55,6 +55,8 @@ class RomaniaMapInverted(RomaniaMap):
 class RomaniaMapState(State):
     def __init__(self, city):
         self.city = city
+
+
 
     def __eq__(self, other):
         return isinstance(other, RomaniaMapState) and self.city == other.city

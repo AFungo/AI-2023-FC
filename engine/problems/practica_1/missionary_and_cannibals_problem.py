@@ -1,8 +1,8 @@
 from enum import Enum
-from engine.problems.abstractproblem import State, Actions, MyProblem
+from engine.problems.abstract_problem import State, Actions, AbstractProblem
 
 
-class MissionariesAndCannibalsProblem(MyProblem):
+class MissionariesAndCannibalsProblem(AbstractProblem):
     def __init__(self, goal=None):
         initial_state = CannibalAndMissionaryState((3, 3), (0, 0), Side.BEGIN)
         action_list = [MoveMissionaryAction(), MoveCannibalAction(), MoveTwoMissionaryAction(),

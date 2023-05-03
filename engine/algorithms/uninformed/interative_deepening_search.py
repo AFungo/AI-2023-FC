@@ -1,7 +1,5 @@
 from engine.algorithms.search_algorithm import SearchAlgorithm
 from engine.algorithms.uninformed.depth_limited_search import DepthLimitedSearch
-from engine.problems.problem import Problem
-from engine.node import Node
 
 
 class InterativeDeepeningSearch(SearchAlgorithm):

@@ -1,7 +1,6 @@
 from engine.algorithms.search_algorithm import SearchAlgorithm
 from engine.node import Node
 from collections import deque
-from engine.problems.problem import Problem
 
 
 class BreadthFirstSearch(SearchAlgorithm):

@@ -1,5 +1,4 @@
 from engine.algorithms.search_algorithm import SearchAlgorithm
-from engine.problems.problem import Problem
 from engine.node import Node
 
 
