@@ -12,13 +12,13 @@ while IFS=',' read -r -u 3 result
 do
       python3 ./main/n_puzzle.py "$result" &
       PID=$!
-      timeout 10m || wait $PID
-      # shellcheck disable=SC2181
-      if [ $? -eq 0 ]; then
-        echo "Problem result"
+      sleep 1
+      if ps -p $pid > /dev/null; then
+        echo "Problem no finish"
+	kill $PID
       else
-        echo "Problem no result"
-        kill $PID
+        echo "Problem finish"
+	kill $PID
       fi
 done
 
