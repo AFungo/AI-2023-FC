@@ -3,6 +3,7 @@
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 filename="./main/cfg_files/n_puzzle.csv"
+touch "log.txt"
 
 exec 3< "$filename"
 # shellcheck disable=SC2034
