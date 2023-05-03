@@ -15,10 +15,10 @@ do
       sleep 1
       if ps -p $pid > /dev/null; then
         echo "Problem no finish"
-	kill $PID
+	      kill $PID
       else
         echo "Problem finish"
-	kill $PID
+	      kill $PID
       fi
 done
 
