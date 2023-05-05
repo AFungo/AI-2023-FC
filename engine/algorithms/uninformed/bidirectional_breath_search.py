@@ -6,7 +6,7 @@ from engine.utils import join_nodes
 
 
 class BidirectionalBreathSearch(SearchAlgorithm):
-    def __init__(self, initial_problem, final_problem,initial_function, goal_function):
+    def __init__(self, initial_problem, final_problem, initial_function, goal_function):
         self.initial_state = initial_problem.initial_state()
         self.goal_state = final_problem.initial_state()
         self.initial_function = initial_function

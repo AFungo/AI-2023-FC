@@ -8,4 +8,4 @@ class GreedyBestFirstSearch:
         self.heuristic = heuristic
 
     def search(self):
-        return BestFirstGraphSearch(self.problem, self.heuristic)
+        return BestFirstGraphSearch(self.problem, self.heuristic).search()
