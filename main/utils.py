@@ -28,3 +28,11 @@ def n_puzzle_check_solvability(state):
                 inversion += 1
 
     return inversion % 2 == 0
+
+
+def n_puzzle_generate_goal_state(size):
+    array = []
+    for i in range(size-1):
+        array.append(i+1)
+    array.append(0)
+    return array
