@@ -8,7 +8,7 @@ import sys
 from numpy.core._multiarray_umath import sqrt
 from engine.engine import *
 from engine.problems.practica_1.n_puzzle import NPuzzleState, NPuzzleInverted
-from main.utils import export_data, algorithm_parser, n_puzzle_check_solvability
+from main.utils import export_data, algorithm_parser, n_puzzle_check_solvability, n_puzzle_generate_goal_state
 from engine.engine import UninformedAlgorithms, InformedAlgorithms, Problems
 
 
@@ -69,19 +69,38 @@ class Execute:
         data = {}
         heuristics = [Heuristic.MANHATTAN, Heuristic.GASCHNIG, Heuristic.MISPLACED_NUMBERS, Heuristic.LINERAR_CONFLICT]
         algorithm_uniformed = list(UninformedAlgorithms)
+        algorithm_uniformed.remove(UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH)
         algorithm_informed = list(InformedAlgorithms)
         for init in list_initial:
             for alg in algorithm_uniformed:
-                self.add_row(Problems.NPUZZLE.name, alg.name, " ", " ", f'{init.__str__()}', int(sqrt(len(init))), " ", "n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
+                self.add_row(Problems.NPUZZLE.name, alg.name, " ", " ", f'{init.__str__()}', int(sqrt(len(init))), " ",
+                             "../n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
+            self.add_row(Problems.NPUZZLE.name, UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH.name, " ", " ",
+                            f'{init.__str__()}', int(sqrt(len(init))), f'{n_puzzle_generate_goal_state(len(init))}',
+                            "../n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv"
+                         )
             for alg in algorithm_informed:
                 for heu in heuristics:
-                    self.add_row(Problems.NPUZZLE.name, alg.name, " ", heu.name, f'{init.__str__()}', int(sqrt(len(init))), " ", "n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
+                    self.add_row(Problems.NPUZZLE.name, alg.name, " ", heu.name, f'{init.__str__()}', int(sqrt(len(init))), " ",
+                                 "../n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
 
 
 if __name__ == "__main__":
     execute = Execute()
-    # string = "NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,'[2, 0, 6, 7, 5, 3, 4, 1, 8]',3, ,n_puzzle_metrics.csv"
+    # string = "NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,'[3, 1, 7, 4, 2, 5, 8, 6, 0]',3, ,../n_puzzle_metrics_new.csv"
     arg1 = sys.argv[1]
     execute.main(arg1)
     # list_initial = execute.generator_initial_states(3, 10)
+    # list_initial.extend(execute.generator_initial_states(4, 10))
+    # list_initial.extend(execute.generator_initial_states(5, 10))
+    # list_initial.extend(execute.generator_initial_states(6, 10))
+    # list_initial.extend(execute.generator_initial_states(7, 10))
+    # list_initial.extend(execute.generator_initial_states(8, 10))
+    # list_initial.extend(execute.generator_initial_states(9, 10))
+    # list_initial.extend(execute.generator_initial_states(10, 10))
+    # list_initial.extend(execute.generator_initial_states(11, 10))
+    # list_initial.extend(execute.generator_initial_states(12, 10))
+    # list_initial.extend(execute.generator_initial_states(13, 10))
+    # list_initial.extend(execute.generator_initial_states(14, 10))
+    # list_initial.extend(execute.generator_initial_states(15, 10))
     # execute.problem_generator(list_initial)
