@@ -8,7 +8,7 @@ class DepthFirstGraphSearch(SearchAlgorithm):
         self.problem = problem
 
     def search(self):
-        frontier = [(Node(self.problem.initial))]  # Stack
+        frontier = [(Node(self.problem.initial_state()))]  # Stack
 
         explored = set()
         while frontier:

@@ -16,7 +16,7 @@ class BestFirstGraphSearch:
         values will be cached on the nodes as they are computed. So after doing
         a best first search you can examine the f values of the path returned."""
         self.heuristic = memoize(self.heuristic, 'f')
-        node = Node(self.problem.initial)
+        node = Node(self.problem.initial_state())
         frontier = PriorityQueue('min', self.heuristic)
         frontier.append(node)
         explored = set()

@@ -8,7 +8,7 @@ class BreadthFirstGraphSearch(SearchAlgorithm):
         self.problem = problem
 
     def search(self):
-        node = Node(self.problem.initial)
+        node = Node(self.problem.initial_state())
         if self.problem.goal_test(node.state):
             return node
         frontier = deque([node])

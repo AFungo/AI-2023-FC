@@ -3,9 +3,9 @@ from engine.utils import is_in
 
 class Problems:
 
-    goal = None
-    actions_list = None
-    initial = None
+    def goal_state(self):
+        """Return the goal state."""
+        raise NotImplementedError
 
     def initial_state(self):
         raise NotImplementedError
@@ -52,6 +52,9 @@ class AbstractProblem(Problems):
     def initial_state(self):
         return self.initial
 
+    def goal_state(self):
+        return self.goal
+
     def actions(self, state):
         return list(filter(lambda a: a.is_enable(state), self.actions_list))
 
@@ -81,6 +84,9 @@ class CountNodes(Problems):
         self.problem = problem
         self.explored_node = 0
         self.generated_nodes = 0
+
+    def goal_state(self):
+        return self.problem.goal_state()
 
     def initial_state(self):
         return self.problem.initial_state()

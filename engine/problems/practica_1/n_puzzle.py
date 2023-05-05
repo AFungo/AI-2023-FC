@@ -14,17 +14,6 @@ class NPuzzle(AbstractProblem):
         actions_list = [NPuzzleMoveUp(self.n), NPuzzleMoveDown(self.n), NPuzzleMoveLeft(self.n), NPuzzleMoveRight(self.n)]
         super().__init__(initial, actions_list, None)
 
-    def check_solvability(self, state):
-        """ Checks if the given state is solvable """
-
-        inversion = 0
-        for i in range(len(state)):
-            for j in range(i + 1, len(state)):
-                if (state[i] > state[j]) and state[i] != 0 and state[j] != 0:
-                    inversion += 1
-
-        return inversion % 2 == 0
-
 
 class NPuzzleState(State):
     def __init__(self, board, size):
