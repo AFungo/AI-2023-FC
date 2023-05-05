@@ -8,7 +8,7 @@ import sys
 from numpy.core._multiarray_umath import sqrt
 from engine.engine import *
 from engine.problems.practica_1.n_puzzle import NPuzzleState, NPuzzleInverted
-from main.utils import export_data, algorithm_parser
+from main.utils import export_data, algorithm_parser, n_puzzle_check_solvability
 from engine.engine import UninformedAlgorithms, InformedAlgorithms, Problems
 
 
@@ -46,11 +46,24 @@ class Execute:
         initial_states = []
         for i in range(cant_initial_states):
             sublist = random.sample(range(0, size_board**2), size_board**2)
-            while sublist in initial_states:
+            while sublist in initial_states or not n_puzzle_check_solvability(sublist):
                 random.shuffle(sublist)
             initial_states.append(sublist)
 
         return initial_states
+
+    def add_row(self, problem, algorithm, algorithm_params, heuristic, initial_state, n, goal_state, output_file, csv_file):
+        data = {'problem': problem,
+                'algorithm': algorithm,
+                'algorithm_params': algorithm_params,
+                'heuristic': heuristic,
+                'initial_state': initial_state,
+                'n': n,
+                'goal_state': goal_state,
+                'output_file': output_file
+                }
+        df = pd.DataFrame(data, index=[0])
+        df.to_csv(csv_file, mode='a', header=False, index=False)
 
     def problem_generator(self, list_initial):
         data = {}
@@ -59,28 +72,10 @@ class Execute:
         algorithm_informed = list(InformedAlgorithms)
         for init in list_initial:
             for alg in algorithm_uniformed:
-                data = {'problem': Problems.NPUZZLE.name,
-                        'algorithm': alg.name,
-                        'algorithm_params': " ",
-                        'heuristic': " ",
-                        'initial_state': f'{init.__str__()}',
-                        'n': int(sqrt(len(init))),
-                        'goal_state': " ",
-                        'output_file': "n_puzzle_metrics.csv"}
-                df = pd.DataFrame(data, index=[0])
-                df.to_csv('cfg_files/n_puzzle.csv', mode='a', header=False, index=False)
+                self.add_row(Problems.NPUZZLE.name, alg.name, " ", " ", f'{init.__str__()}', int(sqrt(len(init))), " ", "n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
             for alg in algorithm_informed:
                 for heu in heuristics:
-                    data = {'problem': Problems.NPUZZLE.name,
-                            'algorithm': alg.name,
-                            'algorithm_params': " ",
-                            'heuristic': heu.name,
-                            'initial_state': f'{init.__str__()}',
-                            'n': int(sqrt(len(init))),
-                            'goal_state': " ",
-                            'output_file': "n_puzzle_metrics.csv"}
-                    df = pd.DataFrame(data, index=[0])
-                    df.to_csv('cfg_files/n_puzzle.csv', mode='a', header=False, index=False)
+                    self.add_row(Problems.NPUZZLE.name, alg.name, " ", heu.name, f'{init.__str__()}', int(sqrt(len(init))), " ", "n_puzzle_metrics_new.csv", "cfg_files/n_puzzle_new.csv")
 
 
 if __name__ == "__main__":
@@ -88,3 +83,5 @@ if __name__ == "__main__":
     # string = "NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,'[2, 0, 6, 7, 5, 3, 4, 1, 8]',3, ,n_puzzle_metrics.csv"
     arg1 = sys.argv[1]
     execute.main(arg1)
+    # list_initial = execute.generator_initial_states(3, 10)
+    # execute.problem_generator(list_initial)
