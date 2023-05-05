@@ -2,10 +2,10 @@
 # shellcheck disable=SC2155
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 
-filename="./main/cfg_files/n_puzzle.csv"
+filename="./main/cfg_files/n_puzzle_new.csv"
 touch "log.txt"
-#touch "python_log.txt"
-
+touch "log_errors.txt"
+echo "" > log_errors.txt
 exec 3< "$filename"
 # shellcheck disable=SC2034
 read -r header_line <&3
