@@ -18,3 +18,13 @@ def export_data(solution, file_name):
     df = pd.DataFrame(solution, index=[0])
     df.to_csv(file_name, mode='a', header=False, index=False)
 
+
+def n_puzzle_check_solvability(state):
+    """ Checks if the given state is solvable """
+    inversion = 0
+    for i in range(len(state)):
+        for j in range(i + 1, len(state)):
+            if (state[i] > state[j]) and state[i] != 0 and state[j] != 0:
+                inversion += 1
+
+    return inversion % 2 == 0
