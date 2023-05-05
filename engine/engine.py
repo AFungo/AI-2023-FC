@@ -9,6 +9,7 @@ from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
 from engine.algorithms.uninformed.depth_first_graph_search import DepthFirstGraphSearch
 from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
 from engine.algorithms.uninformed.depth_limited_search import DepthLimitedSearch
+from engine.problems.abstract_problem import CountNodes
 from engine.problems.practica_1.missionary_and_cannibals_problem import MissionariesAndCannibalsProblem
 from engine.problems.practica_1.n_puzzle import NPuzzle
 from engine.problems.practica_1.n_queeens import NQueensProblem
@@ -68,11 +69,11 @@ class ProblemFactory:
 
     def create(self):
         if self.problem == Problems.ROMANIA_MAP:
-            return RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"])
+            return CountNodes(RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"]))
         elif self.problem == Problems.NPUZZLE:
-            return NPuzzle(self.problem_params["initial_state"])
+            return CountNodes(NPuzzle(self.problem_params["initial_state"]))
         elif self.problem == Problems.N_QUEENS:
-            return NQueensProblem(self.problem_params["number_queens"])
+            return CountNodes(NQueensProblem(self.problem_params["number_queens"]))
             # return NQueensProblem.__init__(self.initial_state)
         elif self.problem == Problems.CANNIBALS_AND_MISSIONARIES:
             pass
