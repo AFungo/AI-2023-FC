@@ -95,6 +95,7 @@ class CountNodes(Problems):
         return self.problem.actions(state)
 
     def result(self, state, action):
+        self.generated_nodes += 1
         return self.problem.result(state, action)
 
     def goal_test(self, state):
