@@ -16,3 +16,4 @@ qpsolvers
 scipy
 sortedcontainers
 tensorflow
+pytest-timeout
