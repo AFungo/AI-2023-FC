@@ -874,7 +874,7 @@ def join_nodes(direction, node_parent, node_child):
     return solution
 
 
-class TakeTimeAndMemory:
+class ComputeTimeAndMemory:
 
     def __init__(self):
         self.process = None
@@ -895,5 +895,5 @@ class TakeTimeAndMemory:
         self.elapsed_time = end_time - self.start_time
 
     def print_statistics(self):
-        print(f"\n\033[33mRun time: \033[33m {self.elapsed_time :.2f} Sec")
-        print(f"\033[34mMemory use: \033[34m {self.memory_usage :.2f} MB")
+        print(f"\n\033[33mRun time: \033[33m {self.elapsed_time :.3f} Sec")
+        print(f"\033[34mMemory use: \033[34m {self.memory_usage :.3f} MB")
