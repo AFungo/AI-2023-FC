@@ -8,11 +8,12 @@ import heapq
 import operator
 import os.path
 import random
+import time
 from itertools import chain, combinations
 from statistics import mean
 
 import numpy as np
-
+import psutil
 
 
 # ______________________________________________________________________________
@@ -791,7 +792,7 @@ T = Bool(True)
 F = Bool(False)
 
 
-#-_____________________________________________________________________________________
+# -_____________________________________________________________________________________
 class Graph:
     """A graph connects nodes (vertices) by edges (links). Each edge can also
     have a length associated with it. The constructor call is something like:
@@ -871,3 +872,28 @@ def join_nodes(direction, node_parent, node_child):
         action = child.action
         child = child.parent
     return solution
+
+
+class TakeTimeAndMemory:
+
+    def __init__(self):
+        self.process = None
+        self.start_memory = 0
+        self.start_time = 0
+        self.elapsed_time = 0
+        self.memory_usage = 0
+
+    def start(self):
+        self.process = psutil.Process()
+        self.start_memory = self.process.memory_info().rss
+        self.start_time = time.time()
+
+    def end(self):
+        end_memory = self.process.memory_info().rss
+        end_time = time.time()
+        self.memory_usage = (end_memory - self.start_memory) / 1024 / 1024
+        self.elapsed_time = end_time - self.start_time
+
+    def print_statistics(self):
+        print(f"\n\033[33mRun time: \033[33m {self.elapsed_time :.2f} Sec")
+        print(f"\033[34mMemory use: \033[34m {self.memory_usage :.2f} MB")
