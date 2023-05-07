@@ -9,9 +9,9 @@ from engine.problems.practica_1.n_queeens import NQueensState, NQueensProblem, N
 from engine.problems.abstract_problem import CountNodes
 from engine.utils import ComputeTimeAndMemory
 
-
 # Timeout 2m for all algorithms
 pytestmark = pytest.mark.timeout(120)
+
 
 @pytest.fixture
 def params():
