@@ -895,5 +895,5 @@ class ComputeTimeAndMemory:
         self.elapsed_time = end_time - self.start_time
 
     def print_statistics(self):
-        print(f"\n\033[33mRun time: \033[33m {self.elapsed_time :.3f} Sec")
-        print(f"\033[34mMemory use: \033[34m {self.memory_usage :.3f} MB")
+        print(f"\n\033[33mRun time: \033[33m {self.elapsed_time :.5f} Sec")
+        print(f"\033[34mMemory use: \033[34m {self.memory_usage :.5f} MB")
