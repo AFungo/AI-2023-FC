@@ -30,6 +30,7 @@ def params():
     params["easy_goal_state"] = RomaniaMapState('Fagaras')
     params["medium_goal_state"] = RomaniaMapState('Rimnicu')
     params["advanced_goal_state"] = RomaniaMapState('Eforie')
+    params["other_goal_state"] = RomaniaMapState('Bucharest')
 
     # Romania problems
     params["easy_romania_problem"] = CountNodes(RomaniaMap(params["easy_initial_state"], params["easy_goal_state"]))
@@ -38,11 +39,13 @@ def params():
     params["advanced_romania_problem"] = CountNodes(
         RomaniaMap(params["advanced_initial_state"], params["advanced_goal_state"]))
 
+    params["romania_problem"] = RomaniaMap(params["easy_initial_state"], params["other_goal_state"])
+
     return params
 
 
-# def test_find_min_edge(params):
-#     assert params["easy_romania_problem"].find_min_edge() == 70
+def test_find_min_edge(params):
+    assert params["romania_problem"].find_min_edge() == 70
 
 
 def test_depth_first_search(params):
@@ -54,7 +57,7 @@ def test_depth_first_search(params):
                 '(Craiova, Pitesti)',
                 '(Pitesti, Bucharest)'
                 ]
-    algorithm = DepthFirstGraphSearch(params["easy_romania_problem"])
+    algorithm = DepthFirstGraphSearch(params["romania_problem"])
     solution = list(map(
         lambda l: l.__str__(), algorithm.search().solution()))
     assert solution == expected
@@ -62,7 +65,7 @@ def test_depth_first_search(params):
 
 def test_breadth_first_tree_search(params):
     expected = ['(Arad, Sibiu)', '(Sibiu, Fagaras)', '(Fagaras, Bucharest)']
-    algorithm = BreadthFirstGraphSearch(params["easy_romania_problem"])
+    algorithm = BreadthFirstGraphSearch(params["romania_problem"])
     solution = list(map(lambda l: l.__str__(), algorithm.search().solution()))
     assert expected == solution
 
@@ -76,7 +79,7 @@ def test_depth_frist_search_no_cycles(params):
                 '(Craiova, Pitesti)',
                 '(Pitesti, Bucharest)'
                 ]
-    algorithm = DepthFirstSearchNoCycles(params["easy_romania_problem"])
+    algorithm = DepthFirstSearchNoCycles(params["romania_problem"])
     solution = algorithm.search().solution()
     solution = list(map(lambda l: l.__str__(), solution))
     assert expected == solution
@@ -91,15 +94,15 @@ def test_depth_limited_search(params):
                 '(Craiova, Pitesti)',
                 '(Pitesti, Bucharest)'
                 ]
-    algorithm = DepthLimitedSearch(params["easy_romania_problem"], 19)
+    algorithm = DepthLimitedSearch(params["romania_problem"], 19)
     solution = list(map(lambda l: l.__str__(), algorithm.search().solution()))
     assert expected == solution
 
 
 def test_bidirectional_breath_search(params):
     expected = ['(Arad, Sibiu)', '(Sibiu, Fagaras)', '(Fagaras, Bucharest)']
-    final_problem = RomaniaMapInverted(params["goal_state"])
-    algorithm = BidirectionalBreathSearch(params["easy_romania_problem"], final_problem,
+    final_problem = RomaniaMapInverted(params["other_goal_state"])
+    algorithm = BidirectionalBreathSearch(params["romania_problem"], final_problem,
                                           lambda l: l.path_cost, lambda l: l.path_cost
                                           )
     solution = algorithm.search()
