@@ -42,7 +42,7 @@ class Engine:
         end_memory = process.memory_info().rss
         end_time = time.time()
 
-        memory_usage = end_memory - start_memory / 1024 / 1024
+        memory_usage = (end_memory - start_memory) / 1024 / 1024
         run_time = round(end_time - start_time, 5)
         heuristic_name = self.heuristic.__name__ if hasattr(self.heuristic, '__name__') else str(self.heuristic)
         return {"problem": self.problem.__class__.__name__,
