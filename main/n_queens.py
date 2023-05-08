@@ -3,29 +3,26 @@ import sys
 
 import pandas as pd
 from engine.engine import *
-from main.utils import algorithm_parser, export_data
+from main.utils import algorithm_parser, export_data, heuristic_parser
 
 
-class Execute:
+def main(row):
+    data = parse_n_queens(row)
+    problem_params = {"number_queens": data["number_of_queens"]}
+    engine = Engine(data["problem"], data["algorithm"], problem_params, data["heuristic"])
+    solution = engine.solve()
+    export_data(solution, data["output_file"])
 
-    def __init__(self):
-        self.data = None
 
-    def main(self, data):
-        split_states = data.split(',')
-        problem = Problems.__members__[split_states[0]]
-        algorithm = algorithm_parser(split_states[1])
-        if split_states[3] != " ":
-            heuristic = Heuristic.__members__[split_states[3]]
-        else:
-            heuristic = None
-        problem_params = {"number_queens": int(split_states[4])}
-        engine = Engine(problem, algorithm, problem_params, heuristic)
-        solution = engine.solve()
-        export_data(solution, split_states[6])
-
-    def import_data(self, file_name):
-        self.data = pd.read_csv(file_name)
+def parse_n_queens(row):
+    data = {}
+    split_states = row.split(',')
+    data["problem"] = Problems.__members__[split_states[0]]
+    data["algorithm"] = algorithm_parser(split_states[1])
+    data["heuristic"] = heuristic_parser(split_states[3])
+    data["number_of_queens"] = int(split_states[4])
+    data["output_file"] = split_states[6]
+    return data
 
 
 def n_queens_states_generator():
@@ -71,6 +68,5 @@ if __name__ == "__main__":
     # generated states
     # n_queens_problem_generator(n_queens_states_generator())
 
-    execute = Execute()
     arg1 = sys.argv[1]
-    execute.main(arg1)
+    main(arg1)
