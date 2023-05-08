@@ -16,7 +16,7 @@ def algorithm_parser(name):
 
 def export_data(solution, file_name):
     df = pd.DataFrame(solution, index=[0])
-    df.to_csv(file_name, mode='a', header=True, index=False)
+    df.to_csv(file_name, mode='a', header=False, index=False)
 
 
 def n_puzzle_check_solvability(state):
@@ -60,46 +60,3 @@ def heuristic_parser(heuristic):
     except KeyError:
         return None
 
-
-def get_heuristic_name(heuristic):
-    if heuristic is None:
-        return None
-    return heuristic.name
-
-
-def parse_data_to_dictionary(problem, algorithm, heuristic, initial_state, goal_state=None, depth=None,
-                             explored_nodes=None, generated_nodes=None, memory=None, run_time=None,
-                             path_cost=None, path=None, solution=None):
-
-    solution = {"problem": problem.name,
-                "algorithm": algorithm.name,
-                "heuristic": get_heuristic_name(heuristic),
-                "initial_state": initial_state.__str__(),
-                "goal_state": str(goal_state),
-                "depth": none_data_to_string(depth),
-                "explored_nodes": none_data_to_string(explored_nodes),
-                "generated_nodes": none_data_to_string(generated_nodes),
-                "Memory": none_data_to_string(memory),
-                "run_time": none_data_to_string(run_time),
-                "path_cost": none_data_to_string(path_cost),
-                "path": path_to_string(path),
-                "solution": solution_to_string(solution)
-                }
-    return solution
-
-def none_data_to_string(value):
-    if value is not None:
-        return value
-    return " "
-
-
-def solution_to_string(solution):
-    if solution is not None:
-        return str(list(map(lambda l: l.__str__(), solution)))
-    return " "
-
-
-def path_to_string(path):
-    if path is not None:
-        return str(list(map(lambda l: l.state.__str__(), path)))
-    return " "
