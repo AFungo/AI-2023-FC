@@ -69,11 +69,11 @@ class ProblemFactory:
 
     def create(self):
         if self.problem == Problems.ROMANIA_MAP:
-            return RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"])
+            return CountNodes(RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"]))
         elif self.problem == Problems.NPUZZLE:
-            return NPuzzle(self.problem_params["initial_state"])
+            return CountNodes(NPuzzle(self.problem_params["initial_state"]))
         elif self.problem == Problems.N_QUEENS:
-            return NQueensProblem(self.problem_params["number_queens"])
+            return CountNodes(NQueensProblem(self.problem_params["number_queens"]))
             # return NQueensProblem.__init__(self.initial_state)
         elif self.problem == Problems.CANNIBALS_AND_MISSIONARIES:
             pass
@@ -129,20 +129,20 @@ class AlgorithmFactory:
 
     def create_informed_algorithm(self):
         if self.algorithm == InformedAlgorithms.ASTAR_SEARCH:
-            return AstarSearch(CountNodes(self.problem), self.heuristic)
+            return AstarSearch(self.problem, self.heuristic)
         elif self.algorithm == InformedAlgorithms.GREEDY_BEST_FIRST_SEARCH:
-            return GreedyBestFirstSearch(CountNodes(self.problem), self.heuristic)
+            return GreedyBestFirstSearch(self.problem, self.heuristic)
         Exception("Algorithm type not supported")
 
     def create_uninformed_algorithm(self):
         if self.algorithm == UninformedAlgorithms.BREADTH_FIRST_SEARCH:
-            return BreadthFirstGraphSearch(CountNodes(self.problem))
+            return BreadthFirstGraphSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
-            return DepthFirstSearch(CountNodes(self.problem))
+            return DepthFirstSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.UNIFORM_COST_SEARCH:
-            return UniformCostSearch(CountNodes(self.problem))
+            return UniformCostSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.ITERATIVE_DEEPENING_SEARCH:
-            return InterativeDeepeningSearch(CountNodes(self.problem))
+            return InterativeDeepeningSearch(self.problem)
         elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
             init_problem = CountNodesBidirectional(self.problem)
             return BidirectionalBreathSearch(init_problem, CountNodesInverted(self.params['goal_problem'], init_problem), lambda l: 0, lambda l: 0)
