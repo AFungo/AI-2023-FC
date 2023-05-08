@@ -29,6 +29,7 @@ class Engine:
     def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None, heuristic_params=None):
         self.problem_name = problem
         self.algorithm_name = algorithm
+        self.heuristic_name = heuristic
         self.problem = ProblemFactory(problem, problem_params).create()
         self.heuristic = HeuristicFactory(problem, heuristic, heuristic_params).create()
         algorithm_factory = AlgorithmFactory(algorithm, self.problem, self.heuristic, params=algorithm_params)
@@ -48,7 +49,7 @@ class Engine:
         memory_usage = (end_memory - start_memory) / 1024 / 1024
         run_time = round(end_time - start_time, 5)
 
-        return parse_data_to_dictionary(self.problem_name, self.algorithm_name, self.heuristic,
+        return parse_data_to_dictionary(self.problem_name, self.algorithm_name, self.heuristic_name,
                                         self.problem.initial_state(), node_solution.state.__str__(), node_solution.depth,
                                         self.problem.explored_node, self.problem.generated_nodes, memory_usage, run_time,
                                         node_solution.path_cost, node_solution.path(), node_solution.solution())
