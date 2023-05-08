@@ -4,7 +4,7 @@ from engine.algorithms.uninformed.depth_first_graph_search import DepthFirstGrap
 from engine.algorithms.uninformed.depth_limited_search import DepthLimitedSearch
 from engine.problems.abstract_problem import CountNodes
 from engine.utils import ComputeTimeAndMemory
-from engine.problems.practica_1.romania_map import RomaniaMap, RomaniaMapState, RomaniaMapInverted
+from engine.problems.practica_1.romania_map import RomaniaMap, RomaniaMapState, RomaniaMapInverted, RomaniaMapHeuristics
 from engine.algorithms.uninformed.breadth_first_graph_search import BreadthFirstGraphSearch
 from engine.algorithms.uninformed.depth_first_search_no_cycles import DepthFirstSearchNoCycles
 from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
@@ -366,7 +366,8 @@ def test_easy_romania_astar_search(params):
 def test_medium_romania_astar_search(params):
     stats = ComputeTimeAndMemory()
     stats.start()
-    solution = AstarSearch(params["medium_romania_problem"], lambda l: l.path_cost).search()
+    h = RomaniaMapHeuristics('Rimnicu').straigth_line_distance
+    solution = AstarSearch(params["medium_romania_problem"], lambda n: h(n)).search()
     stats.end()
     stats.print_statistics()
     print("\033[32mDepature city: \033[32m" + str(params["medium_initial_state"].city))

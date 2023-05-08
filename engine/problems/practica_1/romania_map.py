@@ -24,22 +24,21 @@ class RomaniaMap(AbstractProblem):
 
         return m
 
+
+class RomaniaMapHeuristics:
+    def __init__(self, goal_city):
+        self.goal_city = goal_city
+
     def straigth_line_distance(self, node):
         """h function is straight-line distance from a node's state to goal."""
         locs = getattr(romania_map, 'locations', None)
         if locs:
             if type(node) is str:
-                return int(distance(locs[node], locs[self.goal]))
+                return int(distance(locs[node.state.city], locs[self.goal_city]))
 
-            return int(distance(locs[node.state], locs[self.goal]))
+            return int(distance(locs[node.state.city], locs[self.goal_city]))
         else:
             return np.inf
-
-
-class RomaniaMapHeuristics:
-
-    def straigth_line_distance(self, node):
-        pass
 
 
 class RomaniaMapInverted(RomaniaMap):
