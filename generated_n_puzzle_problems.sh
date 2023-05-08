@@ -21,6 +21,7 @@ do
       if [ $? -eq 0 ]; then
         echo "Problem finish $result" >> log.txt
       else
+        python3 ./main/n_puzzle_not_goal.py "$result"
         echo "Problem no finish $result" >> log.txt
       fi
 done
