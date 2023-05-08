@@ -95,11 +95,11 @@ class CountNodes(Problems):
         return self.problem.actions(state)
 
     def result(self, state, action):
-        self.generated_nodes += 1
+        self.add_generated_node()
         return self.problem.result(state, action)
 
     def goal_test(self, state):
-        self.explored_node += 1
+        self.add_explored_node()
         return self.problem.goal_test(state)
 
     def path_cost(self, c, state1, action, state2):
@@ -107,6 +107,53 @@ class CountNodes(Problems):
 
     def value(self, state):
         return self.problem.value(state)
+
+    def add_explored_node(self):
+        self.explored_node += 1
+
+    def add_generated_node(self):
+        self.generated_nodes += 1
+
+
+class CountNodesBidirectional(CountNodes):
+    def __init__(self, problem):
+        super().__init__(problem)
+
+    def actions(self, state):
+        self.add_explored_node()
+        return self.problem.actions(state)
+
+    def goal_test(self, state):
+        return self.problem.goal_test(state)
+
+
+class CountNodesInverted(Problems):
+    def __init__(self, inverted_problem, count_nodes):
+        self.count_nodes = count_nodes
+        self.inverted_problem = inverted_problem
+
+    def goal_state(self):
+        return self.inverted_problem.goal_state()
+
+    def initial_state(self):
+        return self.inverted_problem.initial_state()
+
+    def actions(self, state):
+        self.count_nodes.add_explored_node()
+        return self.inverted_problem.actions(state)
+
+    def result(self, state, action):
+        self.count_nodes.add_generated_node()
+        return self.inverted_problem.result(state, action)
+
+    def goal_test(self, state):
+        return self.inverted_problem.goal_test(state)
+
+    def path_cost(self, c, state1, action, state2):
+        return self.inverted_problem.path_cost(c, state1, action, state2)
+
+    def value(self, state):
+        return self.inverted_problem.value(state)
 
 
 class State:
