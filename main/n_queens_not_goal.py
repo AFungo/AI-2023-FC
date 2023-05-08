@@ -9,7 +9,7 @@ from main.utils import algorithm_parser, export_data, algorithm_name
 
 def add_row_no_goal(row):
     data = parse_n_queens(row)
-    solution = parse_data_to_dictionary(data["problem"], data["algorithm"], data["heuristic"], data["number_of_queens"])
+    solution = parse_data_to_dictionary(data["problem"], data["algorithm"], data["heuristic"], tuple([-1] * data["number_of_queens"]))
     export_data(solution, data["output_file"])
 
     def import_data(self, file_name):
