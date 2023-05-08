@@ -102,7 +102,7 @@ class HeuristicFactory:
                 return NPuzzleHeuristics().linear_conflict
         elif self.problem == Problems.N_QUEENS:
             if self.heuristic == Heuristic.UNATTACHED_SQUARES:
-                return NQueensHeuristics.unattacked_squares
+                return NQueensHeuristics().unattacked_squares
         elif self.problem == Problems.ROMANIA_MAP:
             if self.heuristic == Heuristic.STRAIGTH_LINE_DISTANCE:
                 return RomaniaMap.straigth_line_distance
