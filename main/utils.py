@@ -36,3 +36,19 @@ def n_puzzle_generate_goal_state(size):
         array.append(i+1)
     array.append(0)
     return array
+
+
+def algorithm_name(name):
+    if name == "ASTAR_SEARCH":
+        return "AstarSearch"
+    elif name == "BREADTH_FIRST_SEARCH":
+        return "BreadthFirstGraphSearch"
+    elif name == "DEPTH_FIRST_SEARCH":
+        return "DepthFirstSearch"
+    elif name == "GREEDY_BEST_FIRST_SEARCH":
+        return "GreedyBestFirstSearch"
+    elif name == "ITERATIVE_DEEPENING_SEARCH":
+        return "InterativeDeepeningSearch"
+    elif name == "UNIFORM_COST_SEARCH":
+        return "UniformCostSearch"
+    Exception("Algorithm not supported")
