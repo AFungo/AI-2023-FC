@@ -13,8 +13,6 @@ from engine.engine import UninformedAlgorithms, InformedAlgorithms, Problems
 
 
 class Execute:
-    def __init__(self):
-        self.data = None
 
     def main(self, data):
         split_states = data.split('"')
@@ -37,10 +35,6 @@ class Execute:
         engine = Engine(problem, algorithm, problem_params, heuristic, algorithm_params=algorithm_params)
         solution = engine.solve()
         export_data(solution, values[7])
-
-    def import_data(self, file_name):
-        import ast
-        self.data = pd.read_csv(file_name, converters={'initial_state': ast.literal_eval})
 
     def generator_initial_states(self, size_board, cant_initial_states):
         initial_states = []
