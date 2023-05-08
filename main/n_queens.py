@@ -19,8 +19,7 @@ class Execute:
             heuristic = Heuristic.__members__[split_states[3]]
         else:
             heuristic = None
-        aux = int(split_states[4])
-        problem_params = {"number_queens": aux}
+        problem_params = {"number_queens": int(split_states[4])}
         engine = Engine(problem, algorithm, problem_params, heuristic)
         solution = engine.solve()
         export_data(solution, split_states[6])
@@ -69,9 +68,9 @@ def n_queens_problem_generator(list_initial):
 
 if __name__ == "__main__":
 
+    # generated states
+    # n_queens_problem_generator(n_queens_states_generator())
+
     execute = Execute()
-    # data = "N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,../n_queens_metrics/n_queens_metrics.csv"
     arg1 = sys.argv[1]
     execute.main(arg1)
-    # execute.main("cfg_files/n_queens.csv")
-    # n_queens_problem_generator(n_queens_states_generator())
