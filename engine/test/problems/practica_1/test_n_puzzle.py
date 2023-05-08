@@ -2,7 +2,7 @@ import os
 import pytest
 import datetime
 from engine.utils import ComputeTimeAndMemory
-from engine.problems.abstract_problem import CountNodes
+from engine.problems.abstract_problem import CountNodes, CountNodesInverted, CountNodesBidirectional
 from engine.algorithms.informed.best_first_graph_search import BestFirstGraphSearch
 from engine.algorithms.uninformed.depth_first_search_no_cycles import DepthFirstSearchNoCycles
 from engine.algorithms.uninformed.interative_deepening_search import InterativeDeepeningSearch
@@ -280,25 +280,32 @@ def test_5_puzzle_iterative_deepening_search(params):
 
 
 def test_3_puzzle_easy_bidirectional_breadth_first_search(params):
+    init_state = NPuzzleState((1, 2, 3,
+                               4, 5, 6,
+                               7, 8, 0), 3)
+    init_problem = CountNodesBidirectional(NPuzzle(init_state))
     final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
-    final_problem = CountNodes(NPuzzleInverted(final_state))
+    final_problem = CountNodesInverted(NPuzzleInverted(final_state), init_problem)
     stats = ComputeTimeAndMemory()
-    algorithm = BidirectionalBreathSearch(params['n_puzzle_problem'], final_problem, NPuzzleHeuristics().manhattan,
+    algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
     solution = algorithm.search().solution()
     stats.end()
     stats.print_statistics()
-    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
-    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    print(f"\033[31mNode explored: \033[31m {init_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {init_problem.generated_nodes}")
     assert [] == solution
 
 
 def test_3_puzzle_medium_bidirectional_breadth_first_search(params):
-    stats = ComputeTimeAndMemory()
-    init_problem = CountNodes(NPuzzle(params['medium_initial_state']))
+    init_state = NPuzzleState((1, 2, 3,
+                               4, 5, 6,
+                               7, 0, 8), 3)
+    init_problem = CountNodesBidirectional(NPuzzle(init_state))
     final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
-    final_problem = CountNodes(NPuzzleInverted(final_state))
+    final_problem = CountNodesInverted(NPuzzleInverted(final_state), init_problem)
+    stats = ComputeTimeAndMemory()
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
@@ -307,16 +314,19 @@ def test_3_puzzle_medium_bidirectional_breadth_first_search(params):
     stats.print_statistics()
     print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
     print("\033[36mDepth: \033[36m" + str(solution.depth))
-    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
-    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    print(f"\033[31mNode explored: \033[31m {init_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {init_problem.generated_nodes}")
     assert final_problem.goal_test(solution.state)
 
 
 def test_3_puzzle_advanced_bidirectional_breadth_first_search(params):
-    stats = ComputeTimeAndMemory()
-    init_problem = CountNodes(NPuzzle(params['advanced_initial_state']))
+    init_state = NPuzzleState((4, 1, 2,
+                               7, 5, 3,
+                               0, 8, 6), 3)
+    init_problem = CountNodesBidirectional(NPuzzle(init_state))
     final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
-    final_problem = CountNodes(NPuzzleInverted(final_state))
+    final_problem = CountNodesInverted(NPuzzleInverted(final_state), init_problem)
+    stats = ComputeTimeAndMemory()
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
@@ -325,17 +335,21 @@ def test_3_puzzle_advanced_bidirectional_breadth_first_search(params):
     stats.print_statistics()
     print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
     print("\033[36mDepth: \033[36m" + str(solution.depth))
-    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
-    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    print(f"\033[31mNode explored: \033[31m {init_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {init_problem.generated_nodes}")
     assert init_problem.goal_test(solution.state)
 
 
 def test_5_puzzle_bidirectional_breadth_first_search(params):
+    init_state = NPuzzleState((1, 2, 3, 4, 5,
+                               6, 7, 8, 9, 10,
+                               11, 12, 13, 14, 15,
+                               16, 17, 18, 0, 19,
+                               20, 21, 22, 23, 24), 5)
+    init_problem = CountNodesBidirectional(NPuzzle(init_state))
+    final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0), 5)
+    final_problem = CountNodesInverted(NPuzzleInverted(final_state), init_problem)
     stats = ComputeTimeAndMemory()
-    init_problem = CountNodes(NPuzzle(params['5_puzzle_initial_state']))
-    final_state = NPuzzleState(
-        (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0), 5)
-    final_problem = CountNodes(NPuzzleInverted(final_state))
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
@@ -344,8 +358,8 @@ def test_5_puzzle_bidirectional_breadth_first_search(params):
     stats.print_statistics()
     print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
     print("\033[36mDepth: \033[36m" + str(solution.depth))
-    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
-    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    print(f"\033[31mNode explored: \033[31m {init_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {init_problem.generated_nodes}")
     assert final_problem.goal_test(solution.state)
 
 
