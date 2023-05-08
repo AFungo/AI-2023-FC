@@ -112,6 +112,7 @@ def test_bidirectional_breath_search(params):
 
     """ Tests with breadth_first_graph_search"""
 
+
 def test_easy_romania_breadth_first_graph_search(params):
     stats = ComputeTimeAndMemory()
     stats.start()
@@ -156,8 +157,8 @@ def test_advanced_romania_breadth_first_graph_search(params):
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
 
-
     """ Tests with depth_first_search"""
+
 
 def test_easy_romania_depth_first_search(params):
     stats = ComputeTimeAndMemory()
@@ -203,8 +204,8 @@ def test_advanced_romania_depth_first_search(params):
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
 
-
     """ Tests with Uniform-cost search"""
+
 
 def test_easy_romania_uniform_cost_search(params):
     stats = ComputeTimeAndMemory()
@@ -250,8 +251,8 @@ def test_advanced_romania_uniform_cost_search(params):
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
 
-
     """ Tests with Iterative deepening search"""
+
 
 def test_easy_romania_iterative_deepening_search(params):
     stats = ComputeTimeAndMemory()
@@ -297,8 +298,8 @@ def test_advanced_romania_iterative_deepening_search(params):
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
 
-
     """ Tests with Greedy best-first search"""
+
 
 def test_easy_romania_greedy_best_first_search(params):
     stats = ComputeTimeAndMemory()
@@ -344,8 +345,8 @@ def test_advanced_romania_greedy_best_first_search(params):
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
 
-
     """ Tests with A*"""
+
 
 def test_easy_romania_astar_search(params):
     stats = ComputeTimeAndMemory()
@@ -389,4 +390,67 @@ def test_advanced_romania_astar_search(params):
     print("\033[36mDepth: \033[36m" + str(solution.depth))
     print(f"\033[31mNode explored: \033[31m {params['advanced_romania_problem'].explored_node}")
     print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
+    assert solution.state == params["advanced_goal_state"]
+
+    """Tests for Bidirectional breadth-first search"""
+    # Problema: el problema es que como la bidirectinal toma el romania map y el inverted
+    # al decorarlos con el countNodes esa clase no tiene la city :(
+
+def test_easy_bidirectional_breath_search(params):
+
+    stats = ComputeTimeAndMemory()
+    initial_problem = RomaniaMap(params["easy_initial_state"], params["easy_goal_state"])
+    final_problem = RomaniaMapInverted(params["easy_goal_state"])
+
+    algorithm = BidirectionalBreathSearch(initial_problem, final_problem, lambda l: l.path_cost, lambda l: l.path_cost)
+    stats.start()
+    solution = algorithm.search()
+    stats.end()
+    stats.print_statistics()
+    print("\033[32mDepature city: \033[32m" + str(initial_problem.initial_state()))
+    print("\033[32mArrival city: \033[32m" + str(solution.state))
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    # print(f"\033[31mNode explored: \033[31m {params['easy_romania_problem'].explored_node}")
+    # print(f"\033[31mNode generate: \033[31m {params['easy_romania_problem'].generated_nodes}")
+    assert solution.state == params["easy_goal_state"]
+
+
+def test_medium_bidirectional_breath_search(params):
+
+    stats = ComputeTimeAndMemory()
+    initial_problem = RomaniaMap(params["medium_initial_state"], params["medium_goal_state"])
+    final_problem = RomaniaMapInverted(params["medium_goal_state"])
+
+    algorithm = BidirectionalBreathSearch(initial_problem, final_problem, lambda l: l.path_cost, lambda l: l.path_cost)
+    stats.start()
+    solution = algorithm.search()
+    stats.end()
+    stats.print_statistics()
+    print("\033[32mDepature city: \033[32m" + str(initial_problem.initial_state()))
+    print("\033[32mArrival city: \033[32m" + str(solution.state))
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    # print(f"\033[31mNode explored: \033[31m {params['medium_romania_problem'].explored_node}")
+    # print(f"\033[31mNode generate: \033[31m {params['medium_romania_problem'].generated_nodes}")
+    assert solution.state == params["medium_goal_state"]
+
+
+def test_advanced_bidirectional_breath_search(params):
+
+    stats = ComputeTimeAndMemory()
+    initial_problem = RomaniaMap(params["advanced_initial_state"], params["advanced_goal_state"])
+    final_problem = RomaniaMapInverted(params["advanced_goal_state"])
+
+    algorithm = BidirectionalBreathSearch(initial_problem, final_problem, lambda l: l.path_cost, lambda l: l.path_cost)
+    stats.start()
+    solution = algorithm.search()
+    stats.end()
+    stats.print_statistics()
+    print("\033[32mDepature city: \033[32m" + str(initial_problem.initial_state()))
+    print("\033[32mArrival city: \033[32m" + str(solution.state))
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    # print(f"\033[31mNode explored: \033[31m {params['advanced_romania_problem'].explored_node}")
+    # print(f"\033[31mNode generate: \033[31m {params['advanced_romania_problem'].generated_nodes}")
     assert solution.state == params["advanced_goal_state"]
