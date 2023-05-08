@@ -45,7 +45,7 @@ class Engine:
         memory_usage = (end_memory - start_memory) / 1024 / 1024
         run_time = round(end_time - start_time, 5)
         heuristic_name = self.heuristic.__name__ if hasattr(self.heuristic, '__name__') else str(self.heuristic)
-        return {"problem": self.problem.__class__.__name__,
+        return {"problem": self.problem.name_problem,
                 "algorithm": self.algorithm.__class__.__name__,
                 "heuristic": heuristic_name,
                 "initial_state": self.problem.initial_state().__str__(),
