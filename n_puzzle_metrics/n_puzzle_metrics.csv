@@ -1,13 +1,1 @@
 problem,algorithm,heuristic,initial_state,goal_state,depth,explored_nodes,generated_nodes,Memory,run_time,path_cost,path,solution
-NPUZZLE,BREADTH_FIRST_SEARCH,,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,DEPTH_FIRST_SEARCH,,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,UNIFORM_COST_SEARCH,,"(4, 2, 0, 1, 3, 8, 7, 6, 5)","(1, 2, 3, 4, 5, 6, 7, 8, 0)",20,41225,111098,25.37109375,2.76179,20,"['(4, 2, 0, 1, 3, 8, 7, 6, 5)', '(4, 2, 8, 1, 3, 0, 7, 6, 5)', '(4, 2, 8, 1, 0, 3, 7, 6, 5)', '(4, 2, 8, 0, 1, 3, 7, 6, 5)', '(0, 2, 8, 4, 1, 3, 7, 6, 5)', '(2, 0, 8, 4, 1, 3, 7, 6, 5)', '(2, 8, 0, 4, 1, 3, 7, 6, 5)', '(2, 8, 3, 4, 1, 0, 7, 6, 5)', '(2, 8, 3, 4, 1, 5, 7, 6, 0)', '(2, 8, 3, 4, 1, 5, 7, 0, 6)', '(2, 8, 3, 4, 1, 5, 0, 7, 6)', '(2, 8, 3, 0, 1, 5, 4, 7, 6)', '(2, 8, 3, 1, 0, 5, 4, 7, 6)', '(2, 0, 3, 1, 8, 5, 4, 7, 6)', '(0, 2, 3, 1, 8, 5, 4, 7, 6)', '(1, 2, 3, 0, 8, 5, 4, 7, 6)', '(1, 2, 3, 4, 8, 5, 0, 7, 6)', '(1, 2, 3, 4, 8, 5, 7, 0, 6)', '(1, 2, 3, 4, 0, 5, 7, 8, 6)', '(1, 2, 3, 4, 5, 0, 7, 8, 6)', '(1, 2, 3, 4, 5, 6, 7, 8, 0)']","['Move down', 'Move left', 'Move left', 'Move up', 'Move right', 'Move right', 'Move down', 'Move down', 'Move left', 'Move left', 'Move up', 'Move right', 'Move up', 'Move left', 'Move down', 'Move down', 'Move right', 'Move up', 'Move right', 'Move down']"
-NPUZZLE,ITERATIVE_DEEPENING_SEARCH,,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,GREEDY_BEST_FIRST_SEARCH,MANHATTAN,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,GREEDY_BEST_FIRST_SEARCH,GASCHNIG,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,GREEDY_BEST_FIRST_SEARCH,MISPLACED_NUMBERS,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,GREEDY_BEST_FIRST_SEARCH,LINERAR_CONFLICT,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,ASTAR_SEARCH,MANHATTAN,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,ASTAR_SEARCH,GASCHNIG,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,ASTAR_SEARCH,MISPLACED_NUMBERS,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
-NPUZZLE,ASTAR_SEARCH,LINERAR_CONFLICT,"(4, 2, 0, 1, 3, 8, 7, 6, 5)",None, , , , , , , , 
