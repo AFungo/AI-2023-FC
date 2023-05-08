@@ -13,21 +13,20 @@ from engine.problems.abstract_problem import CountNodes, CountNodesBidirectional
 from engine.problems.practica_1.missionary_and_cannibals_problem import MissionariesAndCannibalsProblem
 from engine.problems.practica_1.n_puzzle import NPuzzle
 from engine.problems.practica_1.n_queeens import NQueensProblem
-from engine.problems.practica_1.romania_map import RomaniaMap
+from engine.problems.practica_1.romania_map import RomaniaMap, RomaniaMapHeuristics
 from engine.problems.practica_1.n_puzzle import NPuzzleHeuristics
 from engine.problems.practica_1.n_queeens import NQueensHeuristics
 from engine.algorithms.uninformed.uniform_cost_search import UniformCostSearch
 from engine.algorithms.uninformed.interative_deepening_search import InterativeDeepeningSearch
-from engine.problems.practica_1.romania_map import RomaniaMapHeuristics
 from engine.algorithms.search_algorithm import SearchAlgorithm
 import time
 import psutil
 
 
 class Engine:
-    def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None):
+    def __init__(self, problem, algorithm, problem_params, heuristic=None, algorithm_params=None, heuristic_params=None):
         self.problem = ProblemFactory(problem, problem_params).create()
-        self.heuristic = HeuristicFactory(problem, heuristic).create()
+        self.heuristic = HeuristicFactory(problem, heuristic, heuristic_params).create()
         algorithm_factory = AlgorithmFactory(algorithm, self.problem, self.heuristic, params=algorithm_params)
         self.algorithm = algorithm_factory.create()
         self.problem_params = problem_params
@@ -83,9 +82,10 @@ class ProblemFactory:
 
 class HeuristicFactory:
 
-    def __init__(self, problem, heuristic):
+    def __init__(self, problem, heuristic, params):
         self.problem = problem
         self.heuristic = heuristic
+        self.params = params
 
     def create(self):
         if self.heuristic is None:
@@ -105,7 +105,7 @@ class HeuristicFactory:
                 return NQueensHeuristics().unattacked_squares
         elif self.problem == Problems.ROMANIA_MAP:
             if self.heuristic == Heuristic.STRAIGTH_LINE_DISTANCE:
-                return RomaniaMap.straigth_line_distance
+                return RomaniaMapHeuristics(self.params["goal_city"]).straigth_line_distance
         Exception("Problem or Heuristic type not supported")
 
 
