@@ -3,7 +3,7 @@
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 filename="./main/cfg_files/n_queens.csv"
-
+echo "" > n_queens_metrics/log_errors.txt
 exec 3< "$filename"
 # shellcheck disable=SC2034
 read -r header_line <&3
