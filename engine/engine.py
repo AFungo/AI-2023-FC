@@ -9,7 +9,7 @@ from engine.algorithms.uninformed.breadth_first_search import BreadthFirstSearch
 from engine.algorithms.uninformed.depth_first_graph_search import DepthFirstGraphSearch
 from engine.algorithms.uninformed.depth_first_search import DepthFirstSearch
 from engine.algorithms.uninformed.depth_limited_search import DepthLimitedSearch
-from engine.problems.abstract_problem import CountNodes
+from engine.problems.abstract_problem import CountNodes, CountNodesBidirectional, CountNodesInverted
 from engine.problems.practica_1.missionary_and_cannibals_problem import MissionariesAndCannibalsProblem
 from engine.problems.practica_1.n_puzzle import NPuzzle
 from engine.problems.practica_1.n_queeens import NQueensProblem
@@ -69,11 +69,11 @@ class ProblemFactory:
 
     def create(self):
         if self.problem == Problems.ROMANIA_MAP:
-            return CountNodes(RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"]))
+            return RomaniaMap(self.problem_params["initial_state"], self.problem_params["goal_state"])
         elif self.problem == Problems.NPUZZLE:
-            return CountNodes(NPuzzle(self.problem_params["initial_state"]))
+            return NPuzzle(self.problem_params["initial_state"])
         elif self.problem == Problems.N_QUEENS:
-            return CountNodes(NQueensProblem(self.problem_params["number_queens"]))
+            return NQueensProblem(self.problem_params["number_queens"])
             # return NQueensProblem.__init__(self.initial_state)
         elif self.problem == Problems.CANNIBALS_AND_MISSIONARIES:
             pass
@@ -129,22 +129,23 @@ class AlgorithmFactory:
 
     def create_informed_algorithm(self):
         if self.algorithm == InformedAlgorithms.ASTAR_SEARCH:
-            return AstarSearch(self.problem, self.heuristic)
+            return AstarSearch(CountNodes(self.problem), self.heuristic)
         elif self.algorithm == InformedAlgorithms.GREEDY_BEST_FIRST_SEARCH:
-            return GreedyBestFirstSearch(self.problem, self.heuristic)
+            return GreedyBestFirstSearch(CountNodes(self.problem), self.heuristic)
         Exception("Algorithm type not supported")
 
     def create_uninformed_algorithm(self):
         if self.algorithm == UninformedAlgorithms.BREADTH_FIRST_SEARCH:
-            return BreadthFirstGraphSearch(self.problem)
+            return BreadthFirstGraphSearch(CountNodes(self.problem))
         elif self.algorithm == UninformedAlgorithms.DEPTH_FIRST_SEARCH:
-            return DepthFirstSearch(self.problem)
+            return DepthFirstSearch(CountNodes(self.problem))
         elif self.algorithm == UninformedAlgorithms.UNIFORM_COST_SEARCH:
-            return UniformCostSearch(self.problem)
+            return UniformCostSearch(CountNodes(self.problem))
         elif self.algorithm == UninformedAlgorithms.ITERATIVE_DEEPENING_SEARCH:
-            return InterativeDeepeningSearch(self.problem)
+            return InterativeDeepeningSearch(CountNodes(self.problem))
         elif self.algorithm == UninformedAlgorithms.BIDIRECTIONAL_BREADTH_FIRST_SEARCH:
-            return BidirectionalBreathSearch(self.problem, self.params['goal_problem'], lambda l: 0, lambda l: 0)
+            init_problem = CountNodesBidirectional(self.problem)
+            return BidirectionalBreathSearch(init_problem, CountNodesInverted(self.params['goal_problem'], init_problem), lambda l: 0, lambda l: 0)
         Exception("Algorithm type not supported")
 
 
