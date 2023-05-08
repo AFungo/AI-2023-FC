@@ -81,6 +81,7 @@ class AbstractProblem(Problems):
 class CountNodes(Problems):
 
     def __init__(self, problem):
+        self.name_problem = problem.__class__.__name__
         self.problem = problem
         self.explored_node = 0
         self.generated_nodes = 0
