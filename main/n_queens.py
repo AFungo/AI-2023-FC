@@ -13,29 +13,19 @@ class Execute:
 
     def main(self, data):
         split_states = data.split(',')
-        # init_state = split_states[0]
-        # # goal_state = "[]"
-        # # if len(split_states) > 3:
-        # #     goal_state = split_states[3]
-        # #     data = data.replace(goal_state, '')
-        # # data = data.replace(init_state, '')
-        # # values = data.split(',')
         problem = Problems.__members__[split_states[0]]
         algorithm = algorithm_parser(split_states[1])
-        algorithm_params = split_states[2]
         if split_states[3] != " ":
             heuristic = Heuristic.__members__[split_states[3]]
         else:
             heuristic = None
         aux = int(split_states[4])
         problem_params = {"number_queens": aux}
-        # algorithm_params = {"goal_problem": NPuzzleInverted(NPuzzleState(tuple(ast.literal_eval(goal_state)), int(values[5])))}
         engine = Engine(problem, algorithm, problem_params, heuristic)
         solution = engine.solve()
         export_data(solution, split_states[6])
 
     def import_data(self, file_name):
-        import ast
         self.data = pd.read_csv(file_name)
 
 
@@ -80,9 +70,8 @@ def n_queens_problem_generator(list_initial):
 if __name__ == "__main__":
 
     execute = Execute()
-    data = "N_QUEENS,BREADTH_FIRST_SEARCH, , ,4, ,n_queens_metrics.csv"
-    # arg1 = sys.argv[1]
-    execute.main(data)
+    # data = "N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,n_queens_metrics.csv"
+    arg1 = sys.argv[1]
+    execute.main(arg1)
     # execute.main("cfg_files/n_queens.csv")
-
     # n_queens_problem_generator(n_queens_states_generator())
