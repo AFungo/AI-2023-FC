@@ -28,7 +28,7 @@ class Execute:
 
 def n_queens_states_generator():
     states = []
-    for i in range(50):
+    for i in range(4, 54):
         states.append(i)
     return states
 
