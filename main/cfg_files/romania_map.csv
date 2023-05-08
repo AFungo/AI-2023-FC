@@ -1,351 +1,701 @@
 problem,algorithm,algorithm_params,heuristic,initial_state,goal_state,output_file
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Timisoara,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Pitesti,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Craiova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Oradea,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Vaslui,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Hirsova,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Zerind,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Arad,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Iasi,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Eforie,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Bucharest,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Lugoj,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Sibiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Urziceni,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Neamt,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Giurgiu,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Fagaras,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Mehadia,romania_map_metrics.csv
-ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Rimnicu,romania_map_metrics.csv
-ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Rimnicu,romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Bucharest,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Rimnicu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Giurgiu,Drobeta,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Mehadia,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Urziceni,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Craiova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Zerind,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Arad,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Urziceni,Vaslui,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Fagaras,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Mehadia,Lugoj,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Vaslui,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Lugoj,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Bucharest,Eforie,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Hirsova,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Craiova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Fagaras,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Drobeta,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Pitesti,Zerind,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Eforie,Neamt,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Iasi,Oradea,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Iasi,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Rimnicu,Hirsova,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Oradea,Giurgiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Neamt,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Sibiu,Timisoara,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Timisoara,Pitesti,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BREADTH_FIRST_SEARCH, , ,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,DEPTH_FIRST_SEARCH, , ,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,UNIFORM_COST_SEARCH, , ,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ITERATIVE_DEEPENING_SEARCH, , ,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,GREEDY_BEST_FIRST_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
+ROMANIA_MAP,ASTAR_SEARCH, ,STRAIGTH_LINE_DISTANCE,Arad,Sibiu,./romania_map_metrics/romania_map_metrics.csv
