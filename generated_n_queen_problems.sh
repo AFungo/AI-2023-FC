@@ -17,6 +17,7 @@ do
       if [ $? -eq 0 ]; then
         echo "Problem finish $result" >> n_queens_metrics/log.txt
       else
+        python3 ./main/n_queens_not_goal.py "$result"
         echo "Problem no finish $result" >> n_queens_metrics/log.txt
       fi
 done
