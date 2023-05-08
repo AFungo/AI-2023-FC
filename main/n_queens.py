@@ -50,7 +50,7 @@ def n_queens_problem_generator(list_initial):
                     'heuristic': " ",
                     'number_queens': init,
                     'goal_state': " ",
-                    'output_file': "../n_queens_metrics/n_queens_metrics.csv"}
+                    'output_file': "./n_queens_metrics/n_queens_metrics.csv"}
             df = pd.DataFrame(data, index=[0])
             df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
 
@@ -62,7 +62,7 @@ def n_queens_problem_generator(list_initial):
                         'heuristic': heu.name,
                         'number_queens': init,
                         'goal_state': " ",
-                        'output_file': "../n_queens_metrics/n_queens_metrics.csv"}
+                        'output_file': "./n_queens_metrics/n_queens_metrics.csv"}
                 df = pd.DataFrame(data, index=[0])
                 df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
 
