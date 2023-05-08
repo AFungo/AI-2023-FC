@@ -289,58 +289,64 @@ def test_3_puzzle_easy_bidirectional_breadth_first_search(params):
     solution = algorithm.search().solution()
     stats.end()
     stats.print_statistics()
-    print(f"\033[31mNode explored: \033[31m {params['n_puzzle_problem'].explored_node}")
-    print(f"\033[31mNode generate: \033[31m {params['n_puzzle_problem'].generated_nodes}")
+    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
     assert [] == solution
 
 
 def test_3_puzzle_medium_bidirectional_breadth_first_search(params):
     stats = ComputeTimeAndMemory()
-    init_problem = NPuzzle(params['medium_initial_state'])
+    init_problem = CountNodes(NPuzzle(params['medium_initial_state']))
     final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
-    final_problem = NPuzzleInverted(final_state)
+    final_problem = CountNodes(NPuzzleInverted(final_state))
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
     solution = algorithm.search()
     stats.end()
     stats.print_statistics()
-    # print(f"\033[31mNode explored: \033[31m {params['medium_initial_state'].explored_node}")
-    # print(f"\033[31mNode generate: \033[31m {params['medium_initial_state'].generated_nodes}")
-    assert init_problem.goal_test(solution.state)
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    assert final_problem.goal_test(solution.state)
 
 
 def test_3_puzzle_advanced_bidirectional_breadth_first_search(params):
     stats = ComputeTimeAndMemory()
-    init_problem = NPuzzle(params['advanced_initial_state'])
+    init_problem = CountNodes(NPuzzle(params['advanced_initial_state']))
     final_state = NPuzzleState((1, 2, 3, 4, 5, 6, 7, 8, 0), 3)
-    final_problem = NPuzzleInverted(final_state)
+    final_problem = CountNodes(NPuzzleInverted(final_state))
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
     solution = algorithm.search()
     stats.end()
     stats.print_statistics()
-    # print(f"\033[31mNode explored: \033[31m {params['medium_initial_state'].explored_node}")
-    # print(f"\033[31mNode generate: \033[31m {params['medium_initial_state'].generated_nodes}")
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
     assert init_problem.goal_test(solution.state)
 
 
 def test_5_puzzle_bidirectional_breadth_first_search(params):
     stats = ComputeTimeAndMemory()
-    init_problem = NPuzzle(params['5_puzzle_initial_state'])
+    init_problem = CountNodes(NPuzzle(params['5_puzzle_initial_state']))
     final_state = NPuzzleState(
         (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0), 5)
-    final_problem = NPuzzleInverted(final_state)
+    final_problem = CountNodes(NPuzzleInverted(final_state))
     algorithm = BidirectionalBreathSearch(init_problem, final_problem, NPuzzleHeuristics().manhattan,
                                           NPuzzleHeuristics().manhattan)
     stats.start()
     solution = algorithm.search()
     stats.end()
     stats.print_statistics()
-    # print(f"\033[31mNode explored: \033[31m {params['medium_initial_state'].explored_node}")
-    # print(f"\033[31mNode generate: \033[31m {params['medium_initial_state'].generated_nodes}")
-    assert init_problem.goal_test(solution.state)
+    print("\033[35mPath Cost: \033[35m" + str(solution.path_cost))
+    print("\033[36mDepth: \033[36m" + str(solution.depth))
+    print(f"\033[31mNode explored: \033[31m {final_problem.explored_node}")
+    print(f"\033[31mNode generate: \033[31m {final_problem.generated_nodes}")
+    assert final_problem.goal_test(solution.state)
 
 
 """Tests for Greedy best-first search with heuristic manhattan"""
