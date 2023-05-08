@@ -75,6 +75,9 @@ class NQueensState(State):
         return any(self.conflict(row, col, board[c], c)
                    for c in range(col))
 
+    def __str__(self):
+        return str(self.board)
+
     @staticmethod
     def conflict(row1, col1, row2, col2):
         """Would putting two queens in (row1, col1) and (row2, col2) conflict?"""
@@ -120,6 +123,9 @@ class PlaceAQueenInBoard(Actions):
             new_board[self.col] = self.row
             return NQueensState(state.n, tuple(new_board))
         return ()
+
+    def __str__(self):
+        return "Queen in (" + str(self.col) + "," + str(self.row) + ")"
 
 
 #   Implementation for bidirectional search
