@@ -1,0 +1,331 @@
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[4, 2, 0, 1, 3, 8, 7, 6, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[8, 0, 1, 2, 5, 7, 3, 4, 6]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[0, 6, 8, 3, 1, 7, 2, 4, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[6, 4, 1, 3, 7, 2, 8, 0, 5]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[4, 5, 1, 8, 7, 6, 3, 0, 2]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[0, 3, 4, 8, 5, 6, 2, 1, 7]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[7, 2, 3, 0, 6, 8, 5, 1, 4]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,GASCHNIG,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MISPLACED_NUMBERS,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,LINERAR_CONFLICT,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MANHATTAN,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,GASCHNIG,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,MISPLACED_NUMBERS,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ASTAR_SEARCH, ,LINERAR_CONFLICT,"[4, 1, 5, 2, 0, 6, 7, 8, 3]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BREADTH_FIRST_SEARCH, , ,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,DEPTH_FIRST_SEARCH, , ,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,UNIFORM_COST_SEARCH, , ,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,ITERATIVE_DEEPENING_SEARCH, , ,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3, ,../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3,"[1, 2, 3, 4, 5, 6, 7, 8, 0]",../n_puzzle_metrics_new.csv
+
+
+NPUZZLE,GREEDY_BEST_FIRST_SEARCH, ,MANHATTAN,"[8, 1, 3, 4, 5, 7, 2, 6, 0]",3, ,../n_puzzle_metrics_new.csv
+
+
