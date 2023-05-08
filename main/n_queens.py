@@ -50,7 +50,7 @@ def n_queens_problem_generator(list_initial):
                     'heuristic': " ",
                     'number_queens': init,
                     'goal_state': " ",
-                    'output_file': "n_queens_metrics.csv"}
+                    'output_file': "../n_queens_metrics/n_queens_metrics.csv"}
             df = pd.DataFrame(data, index=[0])
             df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
 
@@ -62,7 +62,7 @@ def n_queens_problem_generator(list_initial):
                         'heuristic': heu.name,
                         'number_queens': init,
                         'goal_state': " ",
-                        'output_file': "n_queens_metrics.csv"}
+                        'output_file': "../n_queens_metrics/n_queens_metrics.csv"}
                 df = pd.DataFrame(data, index=[0])
                 df.to_csv('cfg_files/n_queens.csv', mode='a', header=False, index=False)
 
@@ -70,7 +70,7 @@ def n_queens_problem_generator(list_initial):
 if __name__ == "__main__":
 
     execute = Execute()
-    # data = "N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,n_queens_metrics.csv"
+    # data = "N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,../n_queens_metrics/n_queens_metrics.csv"
     arg1 = sys.argv[1]
     execute.main(arg1)
     # execute.main("cfg_files/n_queens.csv")
