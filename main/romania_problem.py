@@ -5,27 +5,35 @@ from numpy.core._multiarray_umath import sqrt
 
 from engine.engine import Engine, Heuristic, UninformedAlgorithms, Problems, InformedAlgorithms
 from engine.problems.practica_1.romania_map import romania_map, RomaniaMapState, RomaniaMapInverted
-from main.utils import export_data, algorithm_parser
+from main.utils import export_data, algorithm_parser, heuristic_parser
 import pandas as pd
 
 
-class Execute:
+def main(row):
 
-    def main(self, data):
-        values = data.split(',')
-        problem = Problems.__members__[values[0]]
-        algorithm = algorithm_parser(values[1])
-        if values[3] != " ":
-            heuristic = Heuristic.__members__[values[3]]
-        else:
-            heuristic = None
-        problem_params = {"initial_state": RomaniaMapState(values[4]), "goal_state": RomaniaMapState(values[5])}
-        algorithm_params = {"goal_problem": RomaniaMapInverted(RomaniaMapState(values[5]))}
-        output_file = values[6]
-        heuristic_params = {"goal_city": values[5]}
-        engine = Engine(problem, algorithm, problem_params, heuristic, algorithm_params, heuristic_params=heuristic_params)
-        solution = engine.solve()
-        export_data(solution, output_file)
+    data = parse_romania_problem(row)
+
+    problem_params = {"initial_state": RomaniaMapState(data["departure_city"]),
+                      "goal_state": RomaniaMapState(data["arrival_city"])}
+    algorithm_params = {"goal_problem": RomaniaMapInverted(RomaniaMapState(data["arrival_city"]))}
+    heuristic_params = {"goal_city": data["arrival_city"]}
+
+    engine = Engine(data["problem"], data["algorithm"], problem_params,
+                    data["heuristic"], algorithm_params, heuristic_params=heuristic_params)
+    solution = engine.solve()
+    export_data(solution, data["output_file"])
+
+
+def parse_romania_problem(row):
+    data = {}
+    values = row.split(',')
+    data["problem"] = Problems.__members__[values[0]]
+    data["algorithm"] = algorithm_parser(values[1])
+    data["heuristic"] = heuristic_parser(values[3])
+    data["departure_city"] = values[4]
+    data["arrival_city"] = values[5]
+    data["output_file"] = values[6]
+    return data
 
 
 def romania_states_generator():
@@ -70,9 +78,8 @@ def romania_problem_generator(list_initial):
 if __name__ == "__main__":
     #    romania_problem_generator(romania_states_generator())
     # data = "N_QUEENS,ASTAR_SEARCH, ,UNATTACHED_SQUARES,4, ,../n_queens_metrics/n_queens_metrics.csv"
-    execute = Execute()
     arg1 = sys.argv[1]
-    execute.main(arg1)
+    main(arg1)
     # string = "ROMANIA_MAP,BIDIRECTIONAL_BREADTH_FIRST_SEARCH, , ,Iasi,Vaslui,./romania_map_metrics/romania_map_metrics.csv"
     # execute.main(string)
 
